@@ -1,0 +1,11 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - SECTION
+//---------------------------------------------------------------------------------
+.t-template section {
+    //@include theme() {
+    //    background: theme-get('layout-body-background');
+    //} 
+
+	grid-area: t-section;
+	padding: $spacing-20;
+}

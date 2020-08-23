@@ -1,0 +1,12 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - HEADER
+//---------------------------------------------------------------------------------
+.t-template header {
+    @include theme() {
+        background: theme-get('header-background');
+        color: theme-get('header-color');
+    } 
+
+	grid-area: t-header;
+	//padding: 0 0 0 $spacing-20;
+}

@@ -1,0 +1,50 @@
+// --------------------------------------------------------------------------------
+// THEMES
+// --------------------------------------------------------------------------------
+
+// DEFAULTS
+$border-color:                                      $color-grey-300;
+$input-height:                                      36px;
+
+$themes: (
+    darkTheme: (
+        'layout-body-background': $color-grey-100,
+        'layout-body-color': $color-white,
+
+        'layout-body-scroll-primary': green,
+        'layout-body-scroll-secondary': white,
+
+        'nav-background': $color-grey-300,
+
+
+        'header-background': $color-grey-300,
+        'header-color': $color-white,
+
+
+    ),
+    lightTheme: (
+        'layout-body-background': $color-white,
+        'layout-body-color': $color-black,
+
+        'layout-body-scroll-primary': green,
+        'layout-body-scroll-secondary': white,
+
+
+        'nav-background': $color-grey-500,
+
+
+        'header-background': $color-grey-500,
+        'header-color': $color-black,
+
+
+    )
+);
+
+// THEME USAGE
+/*
+.body {
+    @include theme() {
+        background: theme-get('layout-body-background');
+    }    
+}
+*/

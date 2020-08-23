@@ -1,0 +1,121 @@
+// --------------------------------------------------------------------------------
+// VARIABLES
+// --------------------------------------------------------------------------------
+
+// PALETTE
+// --------------------------------------------------------------------------------
+//$darken:                                          darken($color, 10);
+//$lighten:                                         lighten($color, 10);
+
+// TRANSPARENT
+$color-transparent:                                 transparent;
+
+// WHITE
+$color-white: 									    #FFFFFF;
+$color-white-opaque-1: 					 		    rgba(255,255,255,0.75);
+
+// BLACK
+$color-black: 									    #000000;
+$color-black-opaque-1: 					 		    rgba(200,200,200,0.6);
+$color-black-opaque-2:				 			    rgba(50,50,50,0.75);
+
+// GREY
+$color-grey-500:                                    #C4C4C4;
+$color-grey-400:                                    #919191;
+$color-grey-300:                                    #444444;
+$color-grey-200:                                    #2C2C2B;
+$color-grey-100:                                    #191A1A;
+
+// BLUE
+$color-blue:                                        #42A5F5;
+
+// GREEN
+$color-green:                                       #66BB6A;
+
+// RED
+$color-red:                                         #EF5350;
+
+// YELLOW
+$color-yellow:                                      #FAEE58;
+
+
+// FONTS
+// --------------------------------------------------------------------------------
+$font-family:                                       -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Helvetica Neue, sans-serif;
+
+$font-weight-light:                         		300;
+$font-weight-regular:                       		400;
+$font-weight-semibold:                      		600;
+$font-weight-extrabold:                     		800;
+
+$font-size:                           				16px;
+// @include font-size(0.6250); // 10px
+// @include font-size(0.6875); // 11px
+// @include font-size(0.7500); // 12px
+// @include font-size(0.8125); // 13px
+// @include font-size(0.8750); // 14px
+// @include font-size(1.0000); // 16px
+// @include font-size(1.1250); // 18px
+// @include font-size(1.2500); // 20px
+// @include font-size(1.2750); // 22px
+// @include font-size(1.5000); // 24px
+// @include font-size(2.2500); // 36px
+// @include font-size(3.0000); // 48px
+// @include font-size(4.0000); // 64px
+// @include font-size(4.5000); // 72px
+
+
+// CLIENT
+// --------------------------------------------------------------------------------
+$client-height:                                     1280px;
+$client-width:                                      720px;
+
+
+// SPACING
+// --------------------------------------------------------------------------------
+$spacing-1: 										1px;
+$spacing-2: 										2px;
+$spacing-4:                                         4px;
+$spacing-8:                                         8px;
+$spacing-12:                                        12px;
+$spacing-16:                                        16px;
+$spacing-20:                                        20px;
+$spacing-24:                                        24px;
+$spacing-28:                                        28px;
+$spacing-32:                                        32px;
+$spacing-36:                                        36px;
+$spacing-40:                                        40px;
+$spacing-44:                                        40px;
+$spacing-48:                                        48px;
+$spacing-52:                                        52px;
+$spacing-56:                                        56px;
+$spacing-60:                                        60px;
+$spacing-60:                                        80px;
+
+
+// Z-INDEX
+// --------------------------------------------------------------------------------
+$zi-plus-one:										1;
+$zi-modal: 											9;
+$zi-notificaiton:                           		99;
+$zi-popover:                           		        999;
+
+
+// BOX SHADOW
+// --------------------------------------------------------------------------------
+$box-shadow:										0 0 0 1px rgba(63,63,68,.05), 0 1px 3px 0 rgba(63,63,68,.15);
+
+
+// TRANSITIONS
+// --------------------------------------------------------------------------------
+$transition-timer-400ms: 							.4s;
+$transition-easeInOutQuad:  						cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+
+// BREAKPOINTS
+// --------------------------------------------------------------------------------
+$bp-smart:     										'max-width: 320px';
+$bp-smart-tablet:     								'max-width: 600px';
+$bp-tablet:          								'max-width: 768px';
+$bp-tablet-landscape:								'min-width: 1024px';
+$bp-desktop:                        				'min-width: 1280px';

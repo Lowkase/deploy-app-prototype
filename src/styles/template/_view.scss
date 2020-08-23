@@ -1,0 +1,37 @@
+// --------------------------------------------------------------------------------
+// TEMPLATE - VIEW
+//---------------------------------------------------------------------------------
+.t-view {
+	display: grid;
+	grid-gap: $spacing-4;
+    grid-template-areas: "t-view-header" "t-view-content";
+ 	grid-template-columns: auto;
+	grid-template-rows: $template-view-height auto;
+
+    .t-view-header {
+        grid-area: t-view-header;
+        padding-top: $spacing-20;
+    }
+
+    .t-view-content {
+        grid-area: t-view-content;
+        overflow-y: auto;
+        height: calc(100vh - #{$template-view-height});
+        padding-right: $spacing-20;
+
+        section {
+            margin-bottom: $spacing-32;
+
+            > div:first-child {
+                margin-top: $spacing-8;
+            }
+
+            ul {
+                list-style-type: disc;
+                list-style-position: inside;
+                margin-left: $spacing-8;
+                margin-top: $spacing-4;
+            }
+        }
+    }
+}

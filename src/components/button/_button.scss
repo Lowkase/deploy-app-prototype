@@ -1,0 +1,32 @@
+// --------------------------------------------------------------------------------
+// MODULES - BUTTON
+// --------------------------------------------------------------------------------
+.m-button {
+    @include transition (all $transition-timer-400ms $transition-easeInOutQuad);
+    @include font-size(0.8750); // 14px
+
+    background: $color-grey-300;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    max-width: 280px;
+    outline: none;
+    padding: 12px 16px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.m-button-primary {
+    background: pink;
+
+    &:hover {
+        background: darkcyan;
+    }
+}
+

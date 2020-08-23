@@ -1,0 +1,32 @@
+// --------------------------------------------------------------------------------
+// MIXINS - ANIMATE
+// --------------------------------------------------------------------------------
+@mixin scrollbar($size) {
+  ::-webkit-scrollbar {
+		width:  $size;
+		height: $size;
+	}
+
+	::-webkit-scrollbar-thumb {
+        @include theme() {
+            background: theme-get('layout-body-scroll-primary');
+        } 
+	}
+
+	::-webkit-scrollbar-track {
+        @include theme() {
+            background: theme-get('layout-body-scroll-secondary');
+        }
+    }
+  
+  // For Internet Explorer
+  body {
+    @include theme() {
+        scrollbar-face-color: theme-get('layout-body-scroll-primary');
+        scrollbar-track-color: theme-get('layout-body-scroll-secondary');
+    }
+  }
+}
+
+// USAGE
+// @include scrollbar(4px);
