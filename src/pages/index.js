@@ -22,7 +22,7 @@ const IndexPage = (props) => {
         <Layout>
         <header>THIS IS THE HEADER</header>
         <section>
-            <div>THIS IS THE Section</div>
+            <div>THIS IS THE SECTION</div>
 
             <Button
                 text = 'THEME SWITCH'
