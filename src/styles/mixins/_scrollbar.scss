@@ -1,32 +1,32 @@
 // --------------------------------------------------------------------------------
-// MIXINS - ANIMATE
+// MIXINS - SCROLLBAR
 // --------------------------------------------------------------------------------
 @mixin scrollbar($size) {
-  ::-webkit-scrollbar {
-		width:  $size;
-		height: $size;
-	}
-
-	::-webkit-scrollbar-thumb {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+        width:  $size;
+        height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
         @include theme() {
-            background: theme-get('layout-body-scroll-primary');
-        } 
-	}
+            background: theme-get('layout-scroll-thumb');
+        }
 
-	::-webkit-scrollbar-track {
+        border-radius: $border-radius;
+    }
+  
+    &::-webkit-scrollbar-track {
         @include theme() {
-            background: theme-get('layout-body-scroll-secondary');
+            background: theme-get('layout-scroll-background');
         }
     }
   
-  // For Internet Explorer
-  body {
-    @include theme() {
-        scrollbar-face-color: theme-get('layout-body-scroll-primary');
-        scrollbar-track-color: theme-get('layout-body-scroll-secondary');
+    // For Internet Explorer
+    & {
+        @include theme() {
+            scrollbar-face-color: theme-get('layout-scroll-thumb');
+            scrollbar-track-color: theme-get('layout-scroll-background');
+        }
     }
-  }
 }
-
-// USAGE
-// @include scrollbar(4px);

@@ -1,19 +1,17 @@
 // --------------------------------------------------------------------------------
-// TEMPLATE - MAIN
+// LAYOUT - MAIN
 //---------------------------------------------------------------------------------
-.t-template main {
+.t-layout main {
     @include theme() {
         background: theme-get('layout-body-background');
     } 
 
-	grid-area: t-main;
-padding: 0;
-    
 	display: grid;
-	grid-gap: 0;
+	grid-area: t-main;
+    grid-gap: 0;
 	grid-template-areas: "t-header" "t-section";
     grid-template-columns: auto;
-	grid-template-rows: 60px 1fr;;
+	grid-template-rows: $header-height 1fr;;
 	height: 100vh;
-
+    padding: 0;
 }

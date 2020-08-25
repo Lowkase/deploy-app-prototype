@@ -11,19 +11,16 @@ const Layout = (props) => {
             <Helmet>
                 <style type="text/css">{`
                     :root {
-                        --primary-color: pink;
+                        --primary-color: #CE93D8;
                     }
                     
-                    nav {
-                    }
-
-                    .myaction {
-                        color: var(--primary-color);
+                    nav svg:hover path {
+                        fill: var(--primary-color) !important;
                     }
                 `}</style>
             </Helmet>
             <div id="theme" className="darkTheme">
-                <div className="app t-template">
+                <div className="app t-layout">
                     <Nav/>
                     <Main props = { props.children }></Main>
                 </div>

@@ -1,11 +1,10 @@
 // --------------------------------------------------------------------------------
-// TEMPLATE - SECTION
+// LAYOUT - SECTION
 //---------------------------------------------------------------------------------
-.t-template section {
-    //@include theme() {
-    //    background: theme-get('layout-body-background');
-    //} 
-
+.t-layout section {
+    @include scrollbar($spacing-8);
+    
 	grid-area: t-section;
-	padding: $spacing-20;
+    padding: $spacing-20;
+    overflow-y: auto;
 }

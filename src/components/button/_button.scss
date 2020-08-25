@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------
-// MODULES - BUTTON
+// COMPONENTS - BUTTON
 // --------------------------------------------------------------------------------
 .m-button {
     @include transition (all $transition-timer-400ms $transition-easeInOutQuad);
@@ -23,10 +23,10 @@
 }
 
 .m-button-primary {
-    background: pink;
+    background: $color-grey-400;
 
     &:hover {
-        background: darkcyan;
+        background: $color-grey-500;
     }
 }
 

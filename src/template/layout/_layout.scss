@@ -1,11 +1,11 @@
 // --------------------------------------------------------------------------------
-// TEMPLATE - LAYOUT
+// LAYOUT - LAYOUT
 //---------------------------------------------------------------------------------
-.t-template {
+.t-layout {
 	display: grid;
 	grid-gap: 0;
 	grid-template-areas: "t-nav t-main";
-grid-template-columns: 60px 1fr;
+    grid-template-columns: $nav-width 1fr;
 	grid-template-rows: auto;
-	height: 100vh;
+    height: 100vh;
 }

@@ -1,7 +1,7 @@
 // --------------------------------------------------------------------------------
-// TEMPLATE - NAV
+// LAYOUT - NAV
 //---------------------------------------------------------------------------------
-.t-template nav {
+.t-layout nav {
 
     @include theme() {
         background: theme-get('nav-background');
@@ -13,7 +13,7 @@
 
 
 	grid-area: t-nav;
-	padding: $spacing-12;
+	//padding: $spacing-12;
 
 
     svg {
@@ -52,7 +52,8 @@
 		}
 
 		a {
-			color: $color-white;
+            color: $color-white;
+            display: block;
 			text-decoration: none;
 		}
 

@@ -38,6 +38,9 @@ $color-red:                                         #EF5350;
 // YELLOW
 $color-yellow:                                      #FAEE58;
 
+// PINK
+$color-pink:                                        #CE93D8;
+
 
 // FONTS
 // --------------------------------------------------------------------------------
@@ -57,7 +60,7 @@ $font-size:                           				16px;
 // @include font-size(1.0000); // 16px
 // @include font-size(1.1250); // 18px
 // @include font-size(1.2500); // 20px
-// @include font-size(1.2750); // 22px
+// @include font-size(1.3130); // 21px
 // @include font-size(1.5000); // 24px
 // @include font-size(2.2500); // 36px
 // @include font-size(3.0000); // 48px
@@ -67,8 +70,8 @@ $font-size:                           				16px;
 
 // CLIENT
 // --------------------------------------------------------------------------------
-$client-height:                                     1280px;
-$client-width:                                      720px;
+$client-height:                                     720px;
+$client-width:                                      1280px;
 
 
 // SPACING
@@ -99,6 +102,11 @@ $zi-plus-one:										1;
 $zi-modal: 											9;
 $zi-notificaiton:                           		99;
 $zi-popover:                           		        999;
+
+
+// BORDER RADIUS
+// --------------------------------------------------------------------------------
+$border-radius:										3px;
 
 
 // BOX SHADOW

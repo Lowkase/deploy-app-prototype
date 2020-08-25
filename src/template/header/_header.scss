@@ -1,12 +1,19 @@
 // --------------------------------------------------------------------------------
-// TEMPLATE - HEADER
+// LAYOUT - HEADER
 //---------------------------------------------------------------------------------
-.t-template header {
+.t-layout header {
     @include theme() {
         background: theme-get('header-background');
         color: theme-get('header-color');
     } 
 
 	grid-area: t-header;
-	//padding: 0 0 0 $spacing-20;
+
+    .title {
+        @include font-size(1.3130);
+
+        line-height: 60px;
+        padding-left: $spacing-20;
+        text-decoration: uppercase;
+    }
 }
