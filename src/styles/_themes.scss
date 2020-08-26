@@ -9,6 +9,10 @@ $input-height:                                      36px;
 $nav-width:                                         60px;
 $header-height:                                     60px;
 
+$modal-mask-opacity:                                .75;                                              
+
+
+
 $themes: (
     darkTheme: (
         'layout-body-background': $color-grey-100,
@@ -23,6 +27,10 @@ $themes: (
         'header-background': $color-grey-300,
         'header-color': $color-white,
         'header-notification-inbox-fill': $color-white,
+
+        'modal-mask-color': $color-grey-200,
+        'modal-background': $color-grey-200,
+        'modal-color': $color-white,
     ),
     lightTheme: (
         'layout-body-background': $color-white,
@@ -37,6 +45,11 @@ $themes: (
         'header-background': $color-grey-500,
         'header-color': $color-black,
         'header-notification-inbox-fill': $color-black,
+
+        'modal-mask-color': $color-white,
+        'modal-background': $color-grey-500,
+        'modal-color': $color-black,
+
     )
 );
 

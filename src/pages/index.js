@@ -1,16 +1,19 @@
 import React from "react"
+import { useState } from 'react';
 
 import "../styles/styles.scss"
 
 import Layout from "../template/layout/layout"
 import Header from "../template/header/header"
 
-
 import Button from "../components/button/button"
 
+import Modal from "../components/modal/modal"
+import useModal from "../components/modal/useModal"
 
 // INDEX
 const IndexPage = (props) => {
+    // Theme
     const toggleTheme = () => { 
         let theme = document.getElementById("theme");
         if(theme.className === "darkTheme") {
@@ -18,13 +21,19 @@ const IndexPage = (props) => {
         } else {
             theme.className = "darkTheme";
         }
-    }; 
+    };
+
+    // Modal
+    const {isModalShowing, toggleModal} = useModal();
 
     return (
         <Layout>
+            <Modal isModalShowing={isModalShowing} hideModal={toggleModal} />
+
             <Header>
                 <div className="title">DASHBOARD</div>
             </Header>
+
             <section>
                 <Button
                     text = 'THEME SWITCH'
@@ -33,6 +42,11 @@ const IndexPage = (props) => {
                     tabIndex = "0"
                 >
                 </Button>
+
+
+                <button onClick={toggleModal}>Show Modal</button>
+
+
 
                 <div>
                     <h1>Tooks birds precedes contains laid start.</h1>
@@ -82,7 +96,7 @@ const IndexPage = (props) => {
                     <p>Witch-king machine liquor escaped smallest. Grond horror wide distract fruity collared defenses. Do not take me for some conjurer of cheap tricks. Generous permitted unmade wandering Tooks concealed perfected.</p>
                 </div>
             </section>
-    </Layout>
+        </Layout>
     );
 }
 

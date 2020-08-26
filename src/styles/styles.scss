@@ -20,20 +20,10 @@
 @import 'themes';
 @import 'elements';
 
-// MODULES
-//@import 'modules/actions';
-//@import 'modules/button';
-//@import 'modules/code-test';
-//@import 'modules/highlight';
-//@import 'modules/toc';
-/*
-@import 'modules/loading';
-@import 'modules/modal';
-*/
-
 // CONTROLS 
 @import '../components/button/button';
 @import '../components/icon/icon';
+@import '../components/modal/modal';
 
 // TEMPLATE
 @import '../template/layout/layout';
@@ -42,8 +32,7 @@
 @import '../template/header/header';
 @import '../template/section/section';
 
-
 // VIEWS
 /*
-@import '../views/index/style';
+@import '../views/index';
 */

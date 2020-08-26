@@ -1,0 +1,61 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - MODAL
+// --------------------------------------------------------------------------------
+.modal-mask {
+    @include position(fixed, $top: 0, $left: 0);
+    @include theme() {
+        background: theme-get('modal-mask-color');
+    } 
+
+    height: 100vh;
+    opacity: $modal-mask-opacity;
+    width: 100vw;
+    z-index: 1040;
+}
+
+.modal-con {
+    height: 100%;
+    left: 0;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+}
+
+.modal {
+    @include theme() {
+        background: theme-get('modal-background');
+        color: theme-get('modal-color');
+    } 
+
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    padding: $spacing-20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-close-button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    opacity: .3;
+}
