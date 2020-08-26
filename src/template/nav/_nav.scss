@@ -2,69 +2,36 @@
 // LAYOUT - NAV
 //---------------------------------------------------------------------------------
 .t-layout nav {
-
     @include theme() {
         background: theme-get('nav-background');
     }     
-
-
     @include font-size(1.1250); // 18px
 
-
-
 	grid-area: t-nav;
-	//padding: $spacing-12;
-
+    position: relative;
 
     svg {
-        width: 36px;
-        height: 36px;
+        @include theme() {
+            fill: theme-get('nav-item-fill');
+        }
+        height: $icon-size-36;
+        width: $icon-size-36;
     }
-
-
-	.header {
-		display: flex;
-		margin-bottom: $spacing-20;
-
-		svg {
-			height: $spacing-44;
-			fill: $color-blue;
-			width: $spacing-44;
-		}
-
-		.title {
-			@include font-size(1.5000); // 24px
-			
-			margin-left: $spacing-12;
-			margin-top: $spacing-4;
-		}
-	}
-
-	.active{
-		color: $color-blue;
-	}
 
 	ul li {
 		margin-bottom: $spacing-20;
-
-		> div {
-			margin-bottom: $spacing-4;
-		}
-
-		a {
-            color: $color-white;
-            display: block;
-			text-decoration: none;
-		}
-
-		ul li {
-			margin-left: $spacing-20;
-			margin-bottom: $spacing-4;
-
-			a {
-				display: block;
-			}
-		}
 	}
 
+    .logo {
+        margin-top: $spacing-8;
+
+    }
+
+    .site {
+        margin-top: $spacing-52;
+    }
+
+    .util {
+        @include position(absolute, $bottom: 0);
+    }
 }

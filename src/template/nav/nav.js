@@ -14,44 +14,48 @@ import SvgUser from "../../assets/svgs/user";
 const Nav = (props) => {
     return (
         <nav>
-            <ul>
+            <ul className="logo">
                 <li>
-                    <Link to="/" activeClassName="active">
+                    <Link to="/">
                         <Icon type="nav">
-                            <SvgLogo />
+                            <SvgLogo className="theme-primary-color-fill" />
                         </Icon>
                     </Link>
                 </li>
+            </ul>            
+            <ul className="site">
                 <li>
-                    <Link to="/dashboard/" activeClassName="active">
+                    <Link to="/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="nav">
                             <SvgDashboard />
                         </Icon>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/" activeClassName="active">
+                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="nav">
                             <SvgMap />
                         </Icon>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/" activeClassName="active">
+                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="nav">
                             <SvgOther />
                         </Icon>
                     </Link>
                 </li>
+            </ul>
+            <ul className="util">
                 <li>
-                    <Link to="/dashboard/" activeClassName="active">
+                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="nav">
                             <SvgSettings />
                         </Icon>
                     </Link>
                 </li>                 
                 <li>
-                    <Link to="/dashboard/" activeClassName="active">
+                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="nav">
                             <SvgUser />
                         </Icon>

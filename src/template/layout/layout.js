@@ -14,7 +14,19 @@ const Layout = (props) => {
                         --primary-color: #CE93D8;
                     }
                     
-                    nav svg:hover path {
+                    .theme-primary-color-background {
+                        background: var(--primary-color) !important;
+                    }
+                    
+                    .theme-primary-color-fill {
+                        fill: var(--primary-color) !important;
+                    }
+
+                    
+                    nav .theme-primary-color-active-nav svg {
+                        fill: var(--primary-color) !important;
+                    }
+                    nav ul li a:hover .m-icon svg {
                         fill: var(--primary-color) !important;
                     }
                 `}</style>

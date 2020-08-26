@@ -41,6 +41,10 @@ body, html {
     height: 100%;
     width: 100%;
 
+    min-height: $client-height;
+    min-width: $client-width;
+
+    
     overflow: hidden;
     margin: 0;
     padding: 0;
