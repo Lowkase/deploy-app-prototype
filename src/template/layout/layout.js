@@ -18,15 +18,16 @@ const Layout = (props) => {
                         background: var(--primary-color) !important;
                     }
                     
-                    .theme-primary-color-fill {
+                    .theme-primary-color-fill, .theme-primary-color-fill > svg {
                         fill: var(--primary-color) !important;
                     }
 
-                    
+
                     nav .theme-primary-color-active-nav svg {
                         fill: var(--primary-color) !important;
                     }
-                    nav ul li a:hover .m-icon svg {
+                    
+                    .m-icon:hover svg {
                         fill: var(--primary-color) !important;
                     }
                 `}</style>

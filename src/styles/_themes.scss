@@ -22,6 +22,7 @@ $themes: (
 
         'header-background': $color-grey-300,
         'header-color': $color-white,
+        'header-notification-inbox-fill': $color-white,
     ),
     lightTheme: (
         'layout-body-background': $color-white,
@@ -35,6 +36,7 @@ $themes: (
 
         'header-background': $color-grey-500,
         'header-color': $color-black,
+        'header-notification-inbox-fill': $color-black,
     )
 );
 

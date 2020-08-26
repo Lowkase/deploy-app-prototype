@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-// MAIN
+// SECTION
 const Section = (props) => {
     return (
         <section>

@@ -8,6 +8,7 @@
     } 
 
 	grid-area: t-header;
+    position: relative;
 
     .title {
         @include font-size(1.3130);
@@ -15,5 +16,33 @@
         line-height: 60px;
         padding-left: $spacing-20;
         text-decoration: uppercase;
+    }
+
+    .notification-inbox {
+        @include position(absolute, $top: 0, $right: $spacing-20);
+
+        cursor: pointer;
+        padding: 18px;
+        
+        svg {
+            @include theme() {
+                fill: theme-get('header-notification-inbox-fill');
+            } 
+            height: $icon-size-24;
+            width: $icon-size-24;
+        }
+    }
+
+    .notification-inbox-count {
+        @include font-size(0.6250); // 10px
+        @include position(absolute, $top: $spacing-8, $right: $spacing-16);
+
+        background: red;
+        border-radius: 20px;
+        font-weight: $font-weight-extrabold;
+        line-height: 28px;
+        height: 28px;
+        text-align: center;
+        width: 28px;
     }
 }
