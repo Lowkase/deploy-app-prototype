@@ -11,7 +11,7 @@ const Layout = (props) => {
             <Helmet>
                 <style type="text/css">{`
                     :root {
-                        --primary-color: #CE93D8;
+                        --primary-color: #EC407A;
                     }
                     
                     .theme-primary-color-background {

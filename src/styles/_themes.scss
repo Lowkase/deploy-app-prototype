@@ -9,7 +9,7 @@ $input-height:                                      36px;
 $nav-width:                                         60px;
 $header-height:                                     60px;
 
-$modal-mask-opacity:                                .75;                                              
+$modal-mask-opacity:                                .9;                                              
 
 
 
@@ -19,16 +19,16 @@ $themes: (
         'layout-body-color': $color-white,
 
         'layout-scroll-background': $color-grey-100,
-        'layout-scroll-thumb': $color-grey-500,
+        'layout-scroll-thumb': $color-grey-400,
 
-        'nav-background': $color-grey-300,
+        'nav-background': $color-grey-200,
         'nav-item-fill': $color-white,
 
-        'header-background': $color-grey-300,
+        'header-background': $color-grey-200,
         'header-color': $color-white,
         'header-notification-inbox-fill': $color-white,
 
-        'modal-mask-color': $color-grey-200,
+        'modal-mask-color': $color-grey-100,
         'modal-background': $color-grey-200,
         'modal-color': $color-white,
     ),

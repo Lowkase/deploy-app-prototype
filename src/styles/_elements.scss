@@ -21,19 +21,6 @@ body {
 }
 
 body, html {
-    height: 100%;
-    width: 100%;
-
-    min-height: $client-height;
-    min-width: $client-width;
-}
-
-.app {
-    @include theme() {
-        background: theme-get('layout-body-background');
-        color: theme-get('layout-body-color');
-    } 
-
     font-family: $font-family;
     font-size: $font-size; // 16px
     font-weight: $font-weight-regular;
@@ -43,7 +30,23 @@ body, html {
 
     min-height: $client-height;
     min-width: $client-width;
+}
 
+html {
+    overflow: auto;
+}
+
+.app {
+    @include theme() {
+        background: theme-get('layout-body-background');
+        color: theme-get('layout-body-color');
+    } 
+
+    height: 100%;
+    width: 100%;
+
+    min-height: $client-height;
+    min-width: $client-width;
     
     overflow: hidden;
     margin: 0;
