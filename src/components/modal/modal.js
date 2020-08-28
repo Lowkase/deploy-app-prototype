@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Button from "../../components/button/button"
+import ButtonGroup from "../../components/buttonGroup/buttonGroup"
 import Icon from "../../components/icon/icon"
+
 import SvgClose from "../../assets/svgs/close";
 
 // MODAL
@@ -14,13 +17,9 @@ const Modal = ({ isModalShowing, hideModal }) => isModalShowing ? ReactDOM.creat
             <div className="modal">
                 <div className="modal-header">
                     <div>Modal Header</div>
-                    <Icon type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hideModal} role="button">
-                    <button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hideModal}>
+                    <Icon className="modal-close-button" type="small" handleClick={hideModal} data-dismiss="modal" aria-label="Close" role="button">
                         <SvgClose />
-                    </button>
                     </Icon>
-
-
                 </div>
                 <div className="modal-content">
 
@@ -74,7 +73,28 @@ const Modal = ({ isModalShowing, hideModal }) => isModalShowing ? ReactDOM.creat
 
                 </div>
                 <div className="modal-footer">
-                    <div className="m-button" data-dismiss="modal" aria-label="Close" onClick={hideModal}>Close</div>
+                    <ButtonGroup
+                        scheme = 'm-button-group-right'
+                    >
+                        <Button 
+                            aria-label="Cancel" 
+                            className="m-button" 
+                            data-dismiss="modal" 
+                            handleClick={hideModal}
+                            scheme="m-button-secondary theme-secondary-color-background"
+                            text="Cancel"
+                        >
+                        </Button>
+                        <Button 
+                            aria-label="Apply" 
+                            className="m-button" 
+                            data-dismiss="modal" 
+                            handleClick={hideModal}
+                            scheme="theme-primary-color-background"
+                            text="Apply"
+                        >
+                        </Button>
+                    </ButtonGroup>
                 </div>
             </div>
         </div>

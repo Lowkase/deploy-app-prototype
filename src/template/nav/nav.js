@@ -17,7 +17,7 @@ const Nav = (props) => {
             <ul className="logo">
                 <li>
                     <Link to="/">
-                        <Icon type="nav">
+                        <Icon type="large">
                             <SvgLogo className="theme-primary-color-fill" />
                         </Icon>
                     </Link>
@@ -26,21 +26,21 @@ const Nav = (props) => {
             <ul className="site">
                 <li>
                     <Link to="/" activeClassName="theme-primary-color-active-nav">
-                        <Icon type="nav">
+                        <Icon type="large">
                             <SvgDashboard />
                         </Icon>
                     </Link>
                 </li>
                 <li>
                     <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
-                        <Icon type="nav">
+                        <Icon type="large">
                             <SvgMap />
                         </Icon>
                     </Link>
                 </li>
                 <li>
                     <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
-                        <Icon type="nav">
+                        <Icon type="large">
                             <SvgOther />
                         </Icon>
                     </Link>
@@ -49,14 +49,14 @@ const Nav = (props) => {
             <ul className="util">
                 <li>
                     <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
-                        <Icon type="nav">
+                        <Icon type="large">
                             <SvgSettings />
                         </Icon>
                     </Link>
                 </li>                 
                 <li>
                     <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
-                        <Icon type="nav">
+                        <Icon type="large">
                             <SvgUser />
                         </Icon>
                     </Link>

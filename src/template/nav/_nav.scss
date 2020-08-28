@@ -10,21 +10,22 @@
 	grid-area: t-nav;
     position: relative;
 
-    svg {
-        @include theme() {
-            fill: theme-get('nav-item-fill');
-        }
-        height: $icon-size-36;
-        width: $icon-size-36;
-    }
-
 	ul li {
 		margin-bottom: $spacing-20;
 	}
 
-    .logo {
-        margin-top: $spacing-8;
+    .m-icon {
+       margin: 0 $spacing-8;
 
+       svg {
+            @include theme() {
+                fill: theme-get('nav-item-fill');
+            }
+        }
+    }
+
+    .logo {
+        margin-top: $spacing-12;
     }
 
     .site {

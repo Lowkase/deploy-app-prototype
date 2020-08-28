@@ -64,11 +64,12 @@
     justify-content: space-between;
     padding: 0 $spacing-20;
 
+    .m-icon {
+        margin-top: $spacing-20;
+    }
+
     svg {
         fill: $color-white;
-        height: $icon-size-12;
-        margin-top: $spacing-12;
-        width: $icon-size-12;
     }
 }
 
@@ -81,7 +82,7 @@
 }
 
 .modal-footer {
-    padding: $spacing-8 $spacing-20;
+    padding: $spacing-12 $spacing-20;
 }
 
 .modal-close-button {

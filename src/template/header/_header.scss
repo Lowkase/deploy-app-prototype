@@ -13,36 +13,34 @@
     .title {
         @include font-size(1.3130);
 
-        line-height: 60px;
+        line-height: $spacing-60;
         padding-left: $spacing-20;
         text-decoration: uppercase;
     }
 
     .notification-inbox {
-        @include position(absolute, $top: 0, $right: $spacing-20);
+        @include position(absolute, $top: 8px, $right: $spacing-32);
 
         cursor: pointer;
-        padding: 18px;
+        padding: $spacing-8;
         
         svg {
             @include theme() {
                 fill: theme-get('header-notification-inbox-fill');
             } 
-            height: $icon-size-24;
-            width: $icon-size-24;
         }
     }
 
     .notification-inbox-count {
         @include font-size(0.6250); // 10px
-        @include position(absolute, $top: $spacing-8, $right: $spacing-16);
+        @include position(absolute, $top: $spacing-8, $right: $spacing-24);
 
-        background: red;
-        border-radius: 20px;
+        background: $color-red;
+        border-radius: $spacing-20;
         font-weight: $font-weight-extrabold;
-        line-height: 28px;
-        height: 28px;
+        line-height: $spacing-28;
+        height: $spacing-28;
         text-align: center;
-        width: 28px;
+        width: $spacing-28;
     }
 }

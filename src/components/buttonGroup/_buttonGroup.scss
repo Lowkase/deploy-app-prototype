@@ -1,0 +1,19 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - BUTTON GROUP
+// --------------------------------------------------------------------------------
+.m-button-group {
+    display: flex;
+    justify-content: flex-start;
+
+    > button {
+        margin-left: 12px;
+    }
+
+    > button:first-child {
+        margin-left: 0;
+    }
+}
+
+.m-button-group-right {
+    justify-content: flex-end;
+}

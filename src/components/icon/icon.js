@@ -4,7 +4,12 @@ import PropTypes from "prop-types";
 // BUTTON
 const Icon = (props) => {
     return (
-        <div className={`m-icon m-icon-${ props.type }`}>
+        <div 
+            className={`m-icon m-icon-${ props.type }`}
+            onClick={props.handleClick} 
+            onKeyPress={props.handleClick} 
+            tabIndex={props.tabIndex}
+        >
             { props.children }
         </div>
     );

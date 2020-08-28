@@ -38,15 +38,24 @@ const IndexPage = (props) => {
                 <Button
                     text = 'THEME SWITCH'
                     handleClick = {toggleTheme}
-                    scheme = "m-button-primary"
+                    scheme = "m-button-secondary theme-secondary-color-background"
                     tabIndex = "0"
+                    width = "200"
+                >
+                </Button>
+                
+                <br /><br />
+
+                <Button
+                    text = 'SHOW MODAL'
+                    handleClick = {toggleModal}
+                    scheme = "m-button-secondary theme-secondary-color-background"
+                    tabIndex = "0"
+                    width = "200"
                 >
                 </Button>
 
-
-                <button onClick={toggleModal}>Show Modal</button>
-
-
+                <br /><br />
 
                <div>
                     <h1>Tooks birds precedes contains laid start.</h1>

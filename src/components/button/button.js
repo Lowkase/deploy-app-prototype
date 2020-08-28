@@ -8,8 +8,10 @@ const Button = (props) => {
             className={`m-button ${ props.scheme }`}    
             onClick={props.handleClick} 
             onKeyPress={props.handleClick} 
-            tabIndex={props.tabIndex}>
-                {props.text}
+            tabIndex={props.tabIndex}
+            width={props.width}
+        >
+            {props.text}
         </button>
     );
 }
@@ -19,11 +21,13 @@ Button.propTypes = {
     scheme: PropTypes.string,
     tabIndex: PropTypes.string,
     text: PropTypes.string,
+    width: PropTypes.string,
 };
   
 Button.defaultProps = {
     tabIndex: '0',
-    text: 'BUTTON'
+    text: 'BUTTON',
+    width: '80'
 };
 
 export default Button

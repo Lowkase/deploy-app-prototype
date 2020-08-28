@@ -3,12 +3,30 @@
 // --------------------------------------------------------------------------------
 .m-icon {
     cursor: pointer; 
-    
+    outline: 0;
+
     svg {
         display: block;
     }
 }
 
-.m-icon-nav {
-    padding: $spacing-12;
+// svg 20 + padding 4 = 24
+.m-icon-small {
+    height: $icon-size-small;
+    padding: $spacing-4;
+    width: $icon-size-small;
+}
+
+// svg 24 + padding 8 = 32
+.m-icon-medium {
+    height: $icon-size-medium;
+    padding: $spacing-4;
+    width: $icon-size-medium;
+}
+
+// svg 36 + padding 8 = 44
+.m-icon-large {
+    height: $icon-size-large;
+    padding: $spacing-8;
+    width: $icon-size-large; 
 }

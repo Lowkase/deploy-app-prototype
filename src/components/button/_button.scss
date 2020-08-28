@@ -19,7 +19,6 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    width: 200px;
 }
 
 .m-button-primary {
@@ -30,3 +29,10 @@
     }
 }
 
+.m-button-secondary {
+    background: $color-grey-400;
+
+    &:hover {
+        background: $color-grey-500;
+    }
+}
