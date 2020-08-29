@@ -9,13 +9,14 @@ $input-height:                                      36px;
 $nav-width:                                         60px;
 $header-height:                                     60px;
 
-$modal-mask-opacity:                                .9;                                              
-
+$modal-mask-opacity:                                .9;
+$drawer-mask-opacity:                               1;
+$drawer-opacity:                                    .9;
 
 
 $themes: (
     darkTheme: (
-        'layout-body-background': $color-grey-100,
+        'layout-body-background': $color-gray-150,
         'layout-body-color': $color-white,
 
         'layout-scroll-background': $color-grey-100,
@@ -31,7 +32,13 @@ $themes: (
         'modal-mask-color': $color-grey-100,
         'modal-background': $color-grey-200,
         'modal-color': $color-white,
-    ),
+
+        'drawer-mask-color': $color-transparent,
+        'drawer-background': $color-grey-100,
+        'drawer-color': $color-white,
+
+
+     ),
     lightTheme: (
         'layout-body-background': $color-white,
         'layout-body-color': $color-black,
@@ -49,6 +56,10 @@ $themes: (
         'modal-mask-color': $color-white,
         'modal-background': $color-grey-500,
         'modal-color': $color-black,
+
+        'drawer-mask-color': $color-white,
+        'drawer-background': $color-grey-500,
+        'drawer-color': $color-black,
 
     )
 );

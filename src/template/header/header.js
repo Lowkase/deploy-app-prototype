@@ -1,25 +1,24 @@
 import React from 'react';
 
-import Modal from "../../components/modal/modal"
-import useModal from "../../components/modal/useModal"
+import Drawer from "../../components/drawer/drawer"
+import useDrawer from "../../components/drawer/useDrawer"
 
 import Icon from "../../components/icon/icon"
-
 import SvgNotificationInbox from "../../assets/svgs/notificationInbox";
 
 // HEADER
 const Header = (props) => {
     // Modal
-    const {isModalShowing, toggleModal} = useModal();
+    const {isDrawerShowing, toggleDrawer} = useDrawer();
 
     return (
         <header>
-            <Modal isModalShowing={isModalShowing} hideModal={toggleModal} />
+            <Drawer isDrawerShowing={isDrawerShowing} hideDrawer={toggleDrawer} />
             { props.children }
             <div className="notification-inbox theme-primary-color-fill">
                 <Icon
                     type="medium"
-                    handleClick={toggleModal}
+                    handleClick={toggleDrawer}
                 >
                     <SvgNotificationInbox />
                 </Icon>

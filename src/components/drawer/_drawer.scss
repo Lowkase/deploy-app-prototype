@@ -1,19 +1,19 @@
 // --------------------------------------------------------------------------------
-// COMPONENTS - MODAL
+// COMPONENTS - DRASER
 // --------------------------------------------------------------------------------
-.modal-mask {
+.drawer-mask {
     @include position(fixed, $top: 0, $left: 0);
     @include theme() {
-        background: theme-get('modal-mask-color');
+        background: theme-get('drawer-mask-color');
     } 
 
     height: 100vh;
-    opacity: $modal-mask-opacity;
+    opacity: $drawer-mask-opacity;
     width: 100vw;
     z-index: 1040;
 }
 
-.modal-con {
+.drawer-con {
     height: 100%;
     left: 0;
     outline: 0;
@@ -25,28 +25,32 @@
     z-index: 1050;
 }
 
-.modal {
+.draser-con-right {
+    right: 0;
+}
+
+.drawer {
     @include theme() {
-        background: theme-get('modal-background');
-        color: theme-get('modal-color');
+        background: theme-get('drawer-background');
+        color: theme-get('drawer-color');
     } 
 
     border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    height: 400px;
+    //box-shadow: $box-shadow;
+    height: auto;
     margin: auto;
+    opacity: $drawer-opacity;
     padding: $spacing-20;
-    width: 400px;
+    width: 360px;
 
     position: absolute;
-    top: 0;
+    top: $header-height;
     right: 0;
     bottom: 0;
-    left: 0;
 
     display: grid;
     grid-gap: 0;
-	grid-template-areas: "modal-header" "modal-content" "modal-footer";
+	grid-template-areas: "drawer-header" "drawer-content" "drawer-footer";
     grid-template-columns: auto;
 	grid-template-rows: $header-height 1fr $header-height;
     padding: 0;
@@ -54,7 +58,7 @@
     z-index: 100;
 }
 
-.modal-header {
+.drawer-header {
     @include font-size(1.1250); // 18px
 
     display: flex;
@@ -72,7 +76,7 @@
     }
 }
 
-.modal-content {
+.drawer-content {
     @include scrollbar($spacing-8);
 
     background: $color-grey-100;
@@ -80,11 +84,11 @@
     padding: $spacing-20;
 }
 
-.modal-footer {
+.drawer-footer {
     padding: $spacing-12 $spacing-20;
 }
 
-.modal-close-button {
+.drawer-close-button {
     background: black;
     border: none;
     color: #fff;
