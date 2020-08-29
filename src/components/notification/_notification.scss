@@ -8,21 +8,65 @@
 }
 
 .m-notification {
-    background: $color-grey-300;
+    @include theme() {
+        background: theme-get('notificaiton-background');
+    } 
+
     border-radius: $border-radius;
-    padding: $spacing-16;
+	display: grid;
+    grid-gap: $spacing-12;
+	grid-template-areas: "notificaiton-type notification-content";
+    grid-template-columns: $spacing-8 1fr;
+	grid-template-rows: auto;
+    padding: $spacing-4;
 
-    .title {
-        font-weight: $font-weight-semibold;
+    .type {
+        @include theme() {
+            background: theme-get('notificaiton-default');
+        } 
+
+        border-radius: $spacing-1;
+
+        &.info {
+            @include theme() {
+                background: theme-get('notificaiton-info');
+            } 
+        }
+
+        &.success {
+            @include theme() {
+                background: theme-get('notificaiton-success');
+            } 
+        }
+
+        &.warning {
+            @include theme() {
+                background: theme-get('notificaiton-warning');
+            } 
+        }
+
+        &.error {
+            @include theme() {
+                background: theme-get('notificaiton-error');
+            } 
+        }
     }
 
-    .description {
-        font-size: 14px;
-        margin-top: $spacing-8;
-    }
+    .content {
+        padding: $spacing-8 $spacing-8 $spacing-8 0;
 
-    .action {
-        font-size: 14px;
-        margin-top: $spacing-16;
+        .title {
+            font-weight: $font-weight-semibold;
+        }
+
+        .description {
+            @include font-size(0.8750); // 14px
+            margin-top: $spacing-8;
+        }
+
+        .action {
+            @include font-size(0.8750); // 14px
+            margin-top: $spacing-16;
+        }
     }
 }

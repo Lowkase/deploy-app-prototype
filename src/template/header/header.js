@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Drawer from "../../components/drawer/drawer"
+import DrawerNotification from "../../components/drawerNotification/drawerNotification"
 import useDrawer from "../../components/drawer/useDrawer"
 
 import Icon from "../../components/icon/icon"
@@ -13,7 +13,11 @@ const Header = (props) => {
 
     return (
         <header>
-            <Drawer isDrawerShowing={isDrawerShowing} hideDrawer={toggleDrawer} />
+            <DrawerNotification 
+                isDrawerShowing={isDrawerShowing} 
+                hideDrawer={toggleDrawer}
+                position="right"
+            />
             { props.children }
             <div className="notification-inbox theme-primary-color-fill">
                 <Icon

@@ -3,17 +3,33 @@
 // --------------------------------------------------------------------------------
 .m-button-group {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
+    padding-right: $spacing-8;
 
-    > button {
-        margin-left: 12px;
+    > * {
+        margin-left: $spacing-12;
     }
 
-    > button:first-child {
+    > *:first-child {
         margin-left: 0;
     }
 }
 
 .m-button-group-right {
     justify-content: flex-end;
+}
+
+.m-button-group-center-full {
+    justify-content: center;
+
+    > * {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
+
+.m-button-group-card {
+    justify-content: flex-end;
+    padding-right: 0;
 }

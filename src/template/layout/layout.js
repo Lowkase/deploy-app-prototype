@@ -22,15 +22,17 @@ const Layout = (props) => {
                         background: var(--primary-color-hover) !important;
                     }
 
+                    .theme-primary-color-hover:hover {
+                        color: var(--primary-color) !important;
+                    }
+
                     .theme-primary-color-background {
                         background: var(--primary-color) !important;
                     }
-                    
 
                     .theme-primary-color-fill, .theme-primary-color-fill > svg {
                         fill: var(--primary-color) !important;
                     }
-
 
                     nav .theme-primary-color-active-nav svg {
                         fill: var(--primary-color) !important;
@@ -39,9 +41,6 @@ const Layout = (props) => {
                     .m-icon:hover svg {
                         fill: var(--primary-color) !important;
                     }
-
-
-
                 `}</style>
             </Helmet>
             <div id="theme" className="darkTheme">

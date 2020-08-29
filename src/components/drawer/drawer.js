@@ -8,9 +8,8 @@ import Notification from "../notification/notification"
 
 import SvgClose from "../../assets/svgs/close";
 
-// MODAL
+// DRAER - NOTIFICATION
 // NOTE - Tell createPortal which DOM element to place the modal into (e.g. "theme")
-
 const Drawer = ({ isDrawerShowing, hideDrawer }) => isDrawerShowing ? ReactDOM.createPortal(
     <React.Fragment>
         <div className="drawer-mask"/>
@@ -23,78 +22,24 @@ const Drawer = ({ isDrawerShowing, hideDrawer }) => isDrawerShowing ? ReactDOM.c
                     </Icon>
                 </div>
                 <div className="drawer-content">
-                    <ul className="m-notifications">
-                        <li>
-                            <Notification
-                                title = "Release candidate ready"
-                                description = "This is a description for a notification"
-                            >
-                            </Notification>
-                        </li>
-                        <li>
-                            <Notification
-                                title = "Release candidate ready"
-                                description = "This is a description for a notification"
-                            >
-                            </Notification>
-                        </li>
-                        <li>
-                            <Notification
-                                title = "Release candidate ready"
-                                description = "This is a description for a notification"
-                            >
-                            </Notification>
-                        </li>
-                        <li>
-                            <Notification
-                                title = "Release candidate ready"
-                                description = "This is a description for a notification"
-                            >
-                            </Notification>
-                        </li>
-                        <li>
-                            <Notification
-                                title = "Release candidate ready"
-                                description = "This is a description for a notification"
-                            >
-                            </Notification>
-                        </li>
-                        <li>
-                            <Notification
-                                title = "Release candidate ready"
-                                description = "This is a description for a notification"
-                            >
-                            </Notification>
-                        </li>
-                        <li>
-                            <Notification
-                                title = "Release candidate ready"
-                                description = "This is a description for a notification"
-                            >
-                            </Notification>
-                        </li>
-                    </ul>
+                    Drawer Content
                 </div>
                 <div className="drawer-footer">
                     <ButtonGroup
-                        scheme = 'm-button-group-right'
+                        scheme="m-button-group-right"
                     >
                         <Button 
-                            aria-label="Mark all as read" 
+                            aria-label="Cancel" 
                             className="m-button" 
-                            data-dismiss="modal" 
-                            handleClick={hideDrawer}
                             scheme="m-button-secondary theme-secondary-color-background"
-                            text="Mark all as read"
+                            text="Cancel"
                         >
                         </Button>
                         <Button 
-                            aria-label="Archive" 
+                            aria-label="Apply" 
                             className="m-button" 
-                            data-dismiss="modal" 
-                            handleClick={hideDrawer}
                             scheme="theme-primary-color-background"
-                            text="Archive all"
+                            text="Apply"
                         >
                         </Button>
                     </ButtonGroup>

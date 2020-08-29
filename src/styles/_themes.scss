@@ -10,8 +10,14 @@ $nav-width:                                         60px;
 $header-height:                                     60px;
 
 $modal-mask-opacity:                                .9;
+
 $drawer-mask-opacity:                               1;
-$drawer-opacity:                                    .9;
+$drawer-opacity:                                    .95;
+$drawer-width:                                      360px;
+$drawer-header-height:                              60px;
+
+$input-background:                                  $color-grey-300;
+
 
 
 $themes: (
@@ -36,7 +42,15 @@ $themes: (
         'drawer-mask-color': $color-transparent,
         'drawer-background': $color-grey-100,
         'drawer-color': $color-white,
+        'drawer-close-fill': $color-white,
+        'drawer-content-background': $color-grey-100,
 
+        'notificaiton-background': $input-background,
+        'notificaiton-default': $color-grey-200,
+        'notificaiton-info': $color-blue,
+        'notificaiton-success': $color-green,
+        'notificaiton-warning': $color-yellow,
+        'notificaiton-error': $color-red,
 
      ),
     lightTheme: (
@@ -60,7 +74,15 @@ $themes: (
         'drawer-mask-color': $color-white,
         'drawer-background': $color-grey-500,
         'drawer-color': $color-black,
+        'drawer-close-fill': $color-white,
+        'drawer-content-background': $color-grey-100,
 
+        'notificaiton-background': $input-background,
+        'notificaiton-default': $color-grey-500,
+        'notificaiton-info': $color-blue,
+        'notificaiton-success': $color-green,
+        'notificaiton-warning': $color-yellow,
+        'notificaiton-error': $color-red,        
     )
 );
 

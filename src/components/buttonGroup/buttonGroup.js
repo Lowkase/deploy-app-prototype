@@ -11,7 +11,7 @@ const ButtonGroup = (props) => {
 }
 
 ButtonGroup.propTypes = {
-    className: PropTypes.string,
+    scheme: PropTypes.string,
 };
   
 ButtonGroup.defaultProps = {
