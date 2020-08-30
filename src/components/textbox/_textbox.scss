@@ -1,0 +1,42 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - TEXTBOX
+// --------------------------------------------------------------------------------
+.m-textbox {
+
+    label {
+        @include font-size(0.8125); // 13px
+        @include theme() {
+            color: theme-get('input-label');
+        } 
+
+        display: block;
+        margin-bottom: $spacing-8;
+        text-transform: uppercase;
+    }
+
+    input[type=text], input[type=number], input[type=password] {
+        @include font-size(1.0000); // 16px
+        @include theme() {
+            background: theme-get('input-background');
+            color: theme-get('input-color');
+        } 
+
+        border: 0;
+        border-radius: $border-radius;
+        height: $input-height;
+        margin-bottom: 0;
+        outline: none;
+        padding: 0 $spacing-8;
+        width: 100%;
+    }
+
+    .description {
+        @include font-size(0.7500); // 12px
+        @include theme() {
+            color: theme-get('input-description');
+        }         
+
+        margin-top: $spacing-4;
+    }
+
+}

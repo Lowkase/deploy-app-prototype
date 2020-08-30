@@ -11,6 +11,9 @@ import Button from "../components/button/button"
 import Modal from "../components/modal/modal"
 import useModal from "../components/modal/useModal"
 
+import DrawerNotification from "../components/drawerControls/drawerControls"
+import useDrawer from "../components/drawer/useDrawer"
+
 // INDEX
 const IndexPage = (props) => {
     // Theme
@@ -26,9 +29,18 @@ const IndexPage = (props) => {
     // Modal
     const {isModalShowing, toggleModal} = useModal();
 
+    // Drawer
+    const {isDrawerShowing, toggleDrawer} = useDrawer();
+
     return (
         <Layout>
             <Modal isModalShowing={isModalShowing} hideModal={toggleModal} />
+
+            <DrawerNotification 
+                isDrawerShowing={isDrawerShowing} 
+                hideDrawer={toggleDrawer}
+                position="left"
+            />
 
             <Header>
                 <div className="title">DASHBOARD</div>
@@ -48,7 +60,7 @@ const IndexPage = (props) => {
 
                 <Button
                     text = 'SHOW MODAL'
-                    handleClick = {toggleModal}
+                    handleClick={toggleDrawer}
                     scheme = "m-button-secondary theme-secondary-color-background"
                     tabIndex = "0"
                     width = "200"
@@ -57,7 +69,18 @@ const IndexPage = (props) => {
 
                 <br /><br />
 
-               <div>
+                <Button
+                    text = 'CONTROLS'
+                    handleClick = {toggleDrawer}
+                    scheme = "m-button-secondary theme-secondary-color-background"
+                    tabIndex = "0"
+                    width = "200"
+                >
+                </Button>
+
+                <br /><br />                
+
+                <div>
                     <h1>Tooks birds precedes contains laid start.</h1>
                     <p>I will take the Ring to Mordor. Shrink interesting until devouring inside launching Isildur's? Sodding funeral fit water mustn't Smeagol.</p>
                     <h2>Troubled forged ablaze bird world's source Arwen.</h2>

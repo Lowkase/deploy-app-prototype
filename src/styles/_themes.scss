@@ -52,6 +52,11 @@ $themes: (
         'notificaiton-warning': $color-yellow,
         'notificaiton-error': $color-red,
 
+        'input-label': $color-grey-600,
+        'input-background': $color-grey-300,
+        'input-color': $color-white,
+        'input-description': $color-grey-900,
+
      ),
     lightTheme: (
         'layout-body-background': $color-white,
@@ -82,7 +87,12 @@ $themes: (
         'notificaiton-info': $color-blue,
         'notificaiton-success': $color-green,
         'notificaiton-warning': $color-yellow,
-        'notificaiton-error': $color-red,        
+        'notificaiton-error': $color-red,      
+        
+        'input-label': $color-grey-600,
+        'input-background': $color-grey-300,
+        'input-color': $color-white,
+        'input-description': $color-grey-900,
     )
 );
 

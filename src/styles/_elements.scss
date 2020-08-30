@@ -73,23 +73,11 @@ fieldset {
     padding: 0;
 }
 
-label {
-    @include font-size(0.875); // 14px
-
-    display: block;
-}
-
 input, textarea {
     @include font-size(0.875); // 14px
 }
 
-input[type=text], input[type=number], input[type=password], textarea {
-    border: 1px solid $border-color;
-    height: $input-height;
-    margin-bottom: 0;
-    outline: none;
-    padding: $spacing-2 + $spacing-1;
-}
+
 
 input[type=text]:focus, input[type=password]:focus, textarea:focus {
     border: 1px solid $border-color;

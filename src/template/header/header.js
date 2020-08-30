@@ -8,7 +8,7 @@ import SvgNotificationInbox from "../../assets/svgs/notificationInbox";
 
 // HEADER
 const Header = (props) => {
-    // Modal
+    // Drawer
     const {isDrawerShowing, toggleDrawer} = useDrawer();
 
     return (
