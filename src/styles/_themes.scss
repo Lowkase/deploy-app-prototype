@@ -4,7 +4,6 @@
 
 // DEFAULTS
 $border-color:                                      $color-grey-300;
-$input-height:                                      36px;
 
 $nav-width:                                         60px;
 $header-height:                                     60px;
@@ -12,17 +11,17 @@ $header-height:                                     60px;
 $modal-mask-opacity:                                .9;
 
 $drawer-mask-opacity:                               1;
-$drawer-opacity:                                    .95;
+$drawer-opacity:                                    .99;
 $drawer-width:                                      360px;
 $drawer-header-height:                              60px;
 
+$input-height:                                      36px;
 $input-background:                                  $color-grey-300;
-
 
 
 $themes: (
     darkTheme: (
-        'layout-body-background': $color-gray-150,
+        'layout-body-background': $color-grey-150,
         'layout-body-color': $color-white,
 
         'layout-scroll-background': $color-grey-100,
@@ -52,11 +51,20 @@ $themes: (
         'notificaiton-warning': $color-yellow,
         'notificaiton-error': $color-red,
 
-        'input-label': $color-grey-600,
+        'input-label': $color-grey-800,
         'input-background': $color-grey-300,
         'input-color': $color-white,
-        'input-description': $color-grey-900,
+        'input-description': $color-grey-800,
+        'input-error-color': $color-white,
+        'input-error-background': $color-red,
 
+        'button-primary-color': $color-white,
+        'button-primary-background': $color-grey-300,
+        'button-primary-background-hover': $color-grey-400,
+
+        'button-secondary-color': $color-white,
+        'button-secondary-background': $color-grey-400,
+        'button-secondary-background-hover': $color-grey-500,
      ),
     lightTheme: (
         'layout-body-background': $color-white,
@@ -93,6 +101,16 @@ $themes: (
         'input-background': $color-grey-300,
         'input-color': $color-white,
         'input-description': $color-grey-900,
+        'input-error-color': $color-white,
+        'input-error-background': $color-red,
+
+        'button-primary-color': $color-white,
+        'button-primary-background': $color-grey-300,
+        'button-primary-background-hover': $color-grey-400,
+
+        'button-secondary-color': $color-white,
+        'button-secondary-background': $color-grey-400,
+        'button-secondary-background-hover': $color-grey-500,
     )
 );
 

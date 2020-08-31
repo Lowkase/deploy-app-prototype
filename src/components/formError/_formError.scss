@@ -1,0 +1,12 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM ERROR
+// --------------------------------------------------------------------------------
+.m-form-error {
+    @include theme() {
+        color: theme-get('input-error-color');
+        background: theme-get('input-error-background');
+    }
+
+    border-radius: 0 0 $border-radius $border-radius;
+    padding: $spacing-4;
+}

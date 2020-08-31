@@ -5,7 +5,10 @@ import PropTypes from "prop-types";
 import Button from "../button/button"
 import ButtonGroup from "../buttonGroup/buttonGroup"
 
-import Textbox from "../textbox/textbox"
+import FormInput from "../formInput/formInput"
+import FormSelect from "../formSelect/formSelect"
+import FormTextarea from "../formTextarea/formTextarea"
+import FormTextbox from "../formTextbox/formTextbox"
 
 import Icon from "../icon/icon"
 import SvgClose from "../../assets/svgs/close";
@@ -25,13 +28,37 @@ const Drawer = (props) => props.isDrawerShowing ? ReactDOM.createPortal(
                 </div>
                 <div className="drawer-content">
                     
-                    <Textbox
-                        label = "texbox"
-                        description = "This is a textbox description"
-                    >
-                    </Textbox>
+                    <FormInput>
+                        <FormTextbox
+                            label = "texbox"
+                            description = "This is a textbox description"
+                            error = "This is a textbox error"
+                        >
+                        </FormTextbox>
+                    </FormInput>
 
+                    <FormInput>
+                        <FormTextarea
+                            label = "textarea"
+                            description = "This is a textarea description"
+                            height= '100px'
+                            error = "This is a textarea error"
+                        >
+                        </FormTextarea>
+                    </FormInput>
 
+                    <FormInput className="last">
+                        <FormSelect
+                            label = "select"
+                            description = "This is a select description"
+                            error = "This is a select error"
+                        >
+                            <option value="gandalf">Gandalf</option>
+                            <option value="aragorn">Aragorn</option>
+                            <option value="Frodo">Frodo</option>
+                            <option value="samwise">Samwise</option>
+                        </FormSelect>
+                    </FormInput>
                 </div>
                 <div className="drawer-footer">
                     <ButtonGroup
@@ -40,14 +67,14 @@ const Drawer = (props) => props.isDrawerShowing ? ReactDOM.createPortal(
                         <Button 
                             aria-label="Cancel" 
                             className="m-button" 
-                            scheme="m-button-secondary theme-secondary-color-background"
+                            scheme="m-button-secondary"
                             text="Cancel"
                         >
                         </Button>
                         <Button 
                             aria-label="Save" 
                             className="m-button" 
-                            scheme="theme-primary-color-background"
+                            scheme="m-button-primary theme-primary-color-background"
                             text="Save"
                         >
                         </Button>

@@ -1,0 +1,21 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM TEXTAREA
+// --------------------------------------------------------------------------------
+.m-form-textarea {
+    textarea {
+        @include font-size(1.0000); // 16px
+        @include theme() {
+            background: theme-get('input-background');
+            color: theme-get('input-color');
+        } 
+
+        border: 0;
+        border-radius: $border-radius;
+        height: $input-height;
+        margin-bottom: 0;
+        outline: none;
+        padding: $spacing-8;
+        resize: none;
+        width: 100%;
+    }
+}

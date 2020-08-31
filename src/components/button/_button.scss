@@ -7,14 +7,13 @@
 
     background: $color-grey-200;
     border: 0;
-    border-radius: 3px;
-    color: white;
+    border-radius: $border-radius;
     cursor: pointer;
     display: block;
-    height: 36px;
+    height: $input-height;
     max-width: 280px;
     outline: none;
-    padding: 12px 16px;
+    padding: 10px $spacing-16;
     margin: 0;
     text-align: center;
     text-decoration: none;
@@ -22,18 +21,28 @@
 }
 
 .m-button-primary {
-    background: $color-grey-300;
-
+    @include theme() {
+        background: theme-get('button-primary-background');
+        color: theme-get('button-primary-color');
+    } 
+    
     &:hover {
-        background: $color-grey-400;
+        @include theme() {
+            background: theme-get('button-primary-background-hover');
+        } 
     }
 }
 
 .m-button-secondary {
-    background: $color-grey-400;
+    @include theme() {
+        background: theme-get('button-secondary-background');
+        color: theme-get('button-secondary-color');
+    } 
 
     &:hover {
-        background: $color-grey-500;
+        @include theme() {
+            background: theme-get('button-secondary-background-hover');
+        } 
     }
 }
 

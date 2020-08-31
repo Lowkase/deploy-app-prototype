@@ -81,7 +81,7 @@ const Modal = ({ isModalShowing, hideModal }) => isModalShowing ? ReactDOM.creat
                             className="m-button" 
                             data-dismiss="modal" 
                             handleClick={hideModal}
-                            scheme="m-button-secondary theme-secondary-color-background"
+                            scheme="m-button-secondary"
                             text="Cancel"
                         >
                         </Button>
@@ -90,7 +90,7 @@ const Modal = ({ isModalShowing, hideModal }) => isModalShowing ? ReactDOM.creat
                             className="m-button" 
                             data-dismiss="modal" 
                             handleClick={hideModal}
-                            scheme="theme-primary-color-background"
+                            scheme="m-button-primary theme-primary-color-background"
                             text="Apply"
                         >
                         </Button>

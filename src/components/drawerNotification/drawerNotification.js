@@ -88,14 +88,14 @@ const Drawer = (props) => props.isDrawerShowing ? ReactDOM.createPortal(
                         <Button 
                             aria-label="Mark all read" 
                             className="m-button" 
-                            scheme="m-button-secondary theme-secondary-color-background"
+                            scheme="m-button-secondary"
                             text="Mark all read"
                         >
                         </Button>
                         <Button 
                             aria-label="Archive" 
                             className="m-button" 
-                            scheme="m-button-secondary theme-secondary-color-background"
+                            scheme="m-button-secondary"
                             text="Archive all"
                         >
                         </Button>

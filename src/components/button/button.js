@@ -6,7 +6,7 @@ const Button = (props) => {
     if(props.type === "button"){
         return (
             <button 
-                className={`m-button ${ props.scheme }`}    
+                className={`m-button ${ props.scheme }`}
                 onClick={props.handleClick} 
                 onKeyPress={props.handleClick} 
                 tabIndex={props.tabIndex}

@@ -1,0 +1,13 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM LABEL
+// --------------------------------------------------------------------------------
+label {
+    @include font-size(0.8125); // 13px
+    @include theme() {
+        color: theme-get('input-label');
+    } 
+
+    display: block;
+    margin-bottom: $spacing-8;
+    text-transform: uppercase;
+}

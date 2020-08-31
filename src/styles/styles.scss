@@ -23,9 +23,18 @@
 // CONTROLS 
 @import '../components/button/button';
 @import '../components/buttonGroup/buttonGroup';
+
 @import '../components/drawer/drawer';
+
+@import '../components/formDescription/formDescription';
+@import '../components/formError/formError';
+@import '../components/formInput/formInput';
+@import '../components/formLabel/formLabel';
+@import '../components/formSelect/formSelect';
+@import '../components/formTextarea/formTextarea';
+@import '../components/formTextbox/formTextbox';
+
 @import '../components/icon/icon';
-@import '../components/textbox/textbox';
 @import '../components/modal/modal';
 @import '../components/notification/notification';
 

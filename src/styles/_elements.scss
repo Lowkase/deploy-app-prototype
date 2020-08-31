@@ -73,27 +73,8 @@ fieldset {
     padding: 0;
 }
 
-input, textarea {
-    @include font-size(0.875); // 14px
-}
-
-
-
-input[type=text]:focus, input[type=password]:focus, textarea:focus {
-    border: 1px solid $border-color;
-    box-shadow: $box-shadow;
-}
-
 input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
     background-color: $color-black;
-}
-
-select {
-    display: block;
-    height: $input-height;
-    outline: none;
-    padding: $spacing-16;
-    width: 100%;
 }
 
 ul {

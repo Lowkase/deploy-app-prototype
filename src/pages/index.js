@@ -60,7 +60,7 @@ const IndexPage = (props) => {
 
                 <Button
                     text = 'SHOW MODAL'
-                    handleClick={toggleDrawer}
+                    handleClick={toggleModal}
                     scheme = "m-button-secondary theme-secondary-color-background"
                     tabIndex = "0"
                     width = "200"

@@ -1,0 +1,11 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM DESCRIPTION
+// --------------------------------------------------------------------------------
+.m-form-description {
+    @include font-size(0.8750); // 14px
+    @include theme() {
+        color: theme-get('input-description');
+    }         
+
+    margin-top: $spacing-4;
+}
