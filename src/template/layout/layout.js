@@ -41,6 +41,22 @@ const Layout = (props) => {
                     .m-icon:hover svg {
                         fill: var(--primary-color) !important;
                     }
+
+                    [type="radio"]:checked + label:after,
+                    [type="radio"]:not(:checked) + label:after {
+                        background: var(--primary-color) !important;
+                    }
+
+                    [type="checkbox"]:checked + label:after,
+                    [type="checkbox"]:not(:checked) + label:after
+                    {
+                        background: var(--primary-color) !important;
+                    }
+
+                    [type="checkbox"]:checked + label:after
+                    {
+                        border: solid var(--primary-color) !important;
+                    }
                 `}</style>
             </Helmet>
             <div id="theme" className="darkTheme">

@@ -1,0 +1,53 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM RADIO
+// --------------------------------------------------------------------------------
+.m-form-radio {
+    margin-bottom: $spacing-12;
+
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: $zi-hide;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label
+    {
+        @include theme() {
+            color: theme-get('input-label');
+        } 
+
+        cursor: pointer;
+        display: block;
+        padding-left: $spacing-24;
+        position: relative;
+        line-height: 20px;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+        @include position(absolute, $top: 0, $left: 0);
+
+        background: $input-background;
+        border-radius: 100%;
+        content: '';
+        height: $spacing-20;
+        width: $spacing-20;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+        @include position(absolute, $top: $spacing-4, $left: $spacing-4);
+
+        border-radius: 100%;
+        content: '';
+        height: $spacing-12;
+        transition: all $transition-timer-200ms $transition-easeInOutQuad;
+        width: $spacing-12;
+    }
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

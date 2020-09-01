@@ -9,4 +9,8 @@
 
     border-radius: 0 0 $border-radius $border-radius;
     padding: $spacing-4;
+
+    &.rounded {
+        border-radius: $border-radius;
+    }
 }
