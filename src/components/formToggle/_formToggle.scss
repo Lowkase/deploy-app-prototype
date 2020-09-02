@@ -1,0 +1,61 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM TOGGLE
+// --------------------------------------------------------------------------------
+.m-form-toggle {
+    .control {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        margin-bottom: 0;
+    }
+
+    .switch {
+        display: inline-block;
+        height: $spacing-20;
+        margin-bottom: 0;
+        position: relative;
+        width: $spacing-40;
+
+        input {
+            height: 0;
+            opacity: 0;
+            width: 0;
+        }
+    }
+
+    .slider {
+        @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+        @include theme() {
+            background: theme-get('input-background');
+        } 
+
+        cursor: pointer;
+        transition: $transition-timer-200ms;
+    }
+
+    .slider:before {
+        @include position(absolute, $bottom: $spacing-2, $left: $spacing-2);
+        @include theme() {
+            background: theme-get('input-label');
+        } 
+
+        content: "";
+        height: 16px;
+        transition: $transition-timer-200ms;
+        width: 16px;
+    }
+
+    input:checked + .slider:before {
+        transform: translateX($spacing-20);
+    }
+
+    .slider.round {
+        border-radius: $spacing-36;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}

@@ -34,6 +34,11 @@ const Layout = (props) => {
                         fill: var(--primary-color) !important;
                     }
 
+                    .theme-primary-color-fill-hover:hover {
+                        fill: var(--primary-color) !important;
+                    }
+
+
                     nav .theme-primary-color-active-nav svg {
                         fill: var(--primary-color) !important;
                     }
@@ -57,6 +62,28 @@ const Layout = (props) => {
                     {
                         border: solid var(--primary-color) !important;
                     }
+
+                    input:checked + .slider:before {
+                        background: var(--primary-color) !important;
+                    }
+
+                    .m-form-pill {
+                        border-color: var(--primary-color);
+                    }
+                    .m-form-pill:hover {
+                        background: var(--primary-color);
+                    }
+                    .m-form-pill .con .value {
+                        color: var(--primary-color);
+                    }
+                    .m-form-pill svg {
+                        fill: var(--primary-color);
+                    }
+
+                    a {
+                        color: var(--primary-color);
+                    }
+
                 `}</style>
             </Helmet>
             <div id="theme" className="darkTheme">

@@ -1,0 +1,49 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM PILL
+// --------------------------------------------------------------------------------
+.m-form-pill {
+    @include theme() {
+        background: theme-get('input-background');
+    } 
+
+    //border-color - from theme
+    border-radius: $spacing-20;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    height: $input-height;
+    padding: 0 $spacing-16;
+    margin-bottom: $spacing-12;
+    margin-right: $spacing-12;
+
+    .con {
+        display: flex;
+    }
+
+    .value {
+        //color - from theme
+        line-height: $input-height;
+    }
+
+    svg {
+        display: block;
+        height: $spacing-16;
+        margin: 10px 0 0 $spacing-8;
+        width: $spacing-16;
+    }
+    .reset {
+        cursor: pointer;
+    }
+
+    &:hover {
+        //background - from theme
+
+        .value, svg {
+            @include theme() {
+                color: theme-get('input-background');
+                fill: theme-get('input-background');
+            } 
+        }
+    }    
+}

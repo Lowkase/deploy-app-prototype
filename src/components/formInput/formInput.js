@@ -16,4 +16,8 @@ FormInput.propTypes = {
     className: PropTypes.string,
 };
 
+FormInput.defaultProps = {
+    className: '',
+};
+
 export default FormInput

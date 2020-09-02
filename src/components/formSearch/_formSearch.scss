@@ -1,0 +1,39 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - FORM SEARCH
+// --------------------------------------------------------------------------------
+.m-form-search {
+
+    display: flex;
+
+    @include theme() {
+        background: theme-get('input-background');
+    } 
+
+    svg {
+        display: block;
+        height: 16px;
+        width: 16px;
+        fill: white;
+        margin: 10px 8px 0 8px;
+    }
+
+    input[type=text], input[type=number], input[type=password] {
+        @include font-size(1.0000); // 16px
+        @include theme() {
+            background: theme-get('input-background');
+            color: theme-get('input-color');
+        } 
+
+        border: 0;
+        display: block;
+        height: $input-height;
+        margin-bottom: 0;
+        outline: none;
+        padding: 0 $spacing-8;
+        width: 100%;
+    }
+
+    .reset {
+        cursor: pointer;
+    }
+}

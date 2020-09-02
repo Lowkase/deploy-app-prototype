@@ -5,14 +5,20 @@ import PropTypes from "prop-types";
 import Button from "../button/button"
 import ButtonGroup from "../buttonGroup/buttonGroup"
 
+import Link from "../link/link"
+
 import FormCheckbox from "../formCheckbox/formCheckbox"
 import FormCheckboxGroup from "../formCheckboxGroup/formCheckboxGroup"
 import FormInput from "../formInput/formInput"
+import FormPill from "../formPill/formPill"
+import FormPillGroup from "../formPillGroup/formPillGroup"
 import FormRadio from "../formRadio/formRadio"
 import FormRadioGroup from "../formRadioGroup/formRadioGroup"
+import FormSearch from "../formSearch/formSearch"
 import FormSelect from "../formSelect/formSelect"
 import FormTextarea from "../formTextarea/formTextarea"
 import FormTextbox from "../formTextbox/formTextbox"
+import FormToggle from "../formToggle/formToggle"
 
 import Icon from "../icon/icon"
 import SvgClose from "../../assets/svgs/close";
@@ -68,7 +74,6 @@ const Drawer = (props) => props.isDrawerShowing ? ReactDOM.createPortal(
                         <FormRadioGroup
                             label = "radio"
                             description = "This is a radio description"
-                            error = "This is a radio error, can you have a radio error?"
                         >
                             <FormRadio name="monsters" id="unique-id-orcs" text="Orcs" checked={true} />
                             <FormRadio name="monsters" id="unique-id-nazgul" text="Nazgul" />
@@ -76,17 +81,45 @@ const Drawer = (props) => props.isDrawerShowing ? ReactDOM.createPortal(
                         </FormRadioGroup>
                     </FormInput>
 
-                    <FormInput className="last">
+                    <FormInput>
                         <FormCheckboxGroup
                             label = "checkbox"
                             description = "This is a checkbox description"
-                            error = "This is a checkbox error, can you have a radio error?"
                         >
                             <FormCheckbox name="heros" id="unique-id-eagles" text="Eagles" checked={true} />
                             <FormCheckbox name="heros" id="unique-id-bombadil" text="Bombadil" />
                             <FormCheckbox name="heros" id="unique-id-beorn" text="Beorn" />
                         </FormCheckboxGroup>
                     </FormInput>
+
+                    <FormInput>
+                        <FormToggle
+                            label = "toggle"
+                            description = "This is a toggle description"
+                        >
+                        </FormToggle>
+                    </FormInput>
+
+                    <FormInput>
+                        <FormSearch
+                            placeholder = "Search"
+                        >
+                        </FormSearch>
+                    </FormInput>
+
+                    <FormPillGroup>
+                        <FormPill value = "Pill" />
+                        <FormPill value = "This is another pill" />
+                        <FormPill value = "This is a third pill" />
+                    </FormPillGroup>
+
+                    <Link 
+                        text="This is a link" />
+                    <br/>
+                    <Link 
+                        text="This is a link underline" 
+                        scheme="underline"
+                    />
 
                 </div>
                 <div className="drawer-footer">
