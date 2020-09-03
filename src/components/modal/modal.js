@@ -17,7 +17,7 @@ const Modal = ({ isModalShowing, hideModal }) => isModalShowing ? ReactDOM.creat
             <div className="modal">
                 <div className="modal-header">
                     <div>Modal Header</div>
-                    <Icon className="modal-close-button" type="small" handleClick={hideModal} data-dismiss="modal" aria-label="Close" role="button">
+                    <Icon type="small modal-close-button" handleClick={hideModal} data-dismiss="modal" aria-label="Close" role="button">
                         <SvgClose />
                     </Icon>
                 </div>

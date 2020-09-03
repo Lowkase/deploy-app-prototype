@@ -3,7 +3,7 @@
 // --------------------------------------------------------------------------------
 .m-form-pill {
     @include theme() {
-        background: theme-get('input-background');
+        background: theme-get('input-pill-background');
     } 
 
     //border-color - from theme

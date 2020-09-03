@@ -25,8 +25,9 @@
     [type="radio"]:checked + label:before,
     [type="radio"]:not(:checked) + label:before {
         @include position(absolute, $top: 0, $left: 0);
-
-        background: $input-background;
+        @include theme() {
+            background: theme-get('radio-background');
+        } 
         border-radius: 100%;
         content: '';
         height: $spacing-20;

@@ -29,9 +29,11 @@
     [type="checkbox"]:not(:checked) + label:before
     {
         @include position(absolute, $top: 0, $left: 0);
+        @include theme() {
+            background: theme-get('checkbox-background');
+        } 
 
         content: '';
-        background: $input-background;
         border-radius: $border-radius;
         content: '';
         height: $spacing-20;
@@ -58,17 +60,4 @@
         opacity: 1;
         transform: scale(1.6);
     }
-
-    /*
-    [type="checkbox"]:disabled:checked + label:before,
-    [type="checkbox"]:disabled:not(:checked) + label:before
-    {
-        border-color: #ccc;
-        background-color: #eee;
-    }
-    [type="checkbox"]:disabled:checked + label:after
-    {
-        background: #aaa;
-    }
-    */
 }

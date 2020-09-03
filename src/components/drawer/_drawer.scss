@@ -31,7 +31,6 @@
         color: theme-get('drawer-color');
     } 
 
-    border-radius: $border-radius;
     display: grid;
     grid-gap: 0;
 	grid-template-areas: "drawer-header" "drawer-content" "drawer-footer";
@@ -55,6 +54,9 @@
 
 .drawer-header {
     @include font-size(1.1250); // 18px
+    @include theme() {
+        color: theme-get('drawer-header-color');
+    } 
 
     display: flex;
     font-weight: $font-weight-semibold;
@@ -68,8 +70,8 @@
 
     svg {
         @include theme() {
-            fill: theme-get('drawer-close-fill');
-        } 
+            fill: theme-get('drawer-header-color');
+        }
     }
 }
 

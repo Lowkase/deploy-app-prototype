@@ -38,7 +38,7 @@
     .slider:before {
         @include position(absolute, $bottom: $spacing-2, $left: $spacing-2);
         @include theme() {
-            background: theme-get('input-label');
+            background: theme-get('toggle-slider-background');
         } 
 
         content: "";

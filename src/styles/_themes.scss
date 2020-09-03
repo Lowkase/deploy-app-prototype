@@ -24,7 +24,7 @@ $themes: (
         'layout-body-background': $color-grey-150,
         'layout-body-color': $color-white,
 
-        'layout-scroll-background': $color-grey-100,
+        'layout-scroll-background': $color-transparent,
         'layout-scroll-thumb': $color-grey-400,
 
         'nav-background': $color-grey-200,
@@ -34,17 +34,21 @@ $themes: (
         'header-color': $color-white,
         'header-notification-inbox-fill': $color-white,
 
-        'modal-mask-color': $color-grey-100,
         'modal-background': $color-grey-200,
+        'modal-close-fill': $color-white,
         'modal-color': $color-white,
+        'modal-content-background': $color-grey-100,
+        'modal-mask-color': $color-grey-100,
 
         'drawer-mask-color': $color-transparent,
         'drawer-background': $color-grey-100,
         'drawer-color': $color-white,
         'drawer-close-fill': $color-white,
         'drawer-content-background': $color-grey-100,
+        'drawer-header-color': $color-white,
 
         'notificaiton-background': $input-background,
+        'notificaiton-color': $color-white,
         'notificaiton-default': $color-grey-200,
         'notificaiton-info': $color-blue,
         'notificaiton-success': $color-green,
@@ -57,6 +61,8 @@ $themes: (
         'input-description': $color-grey-800,
         'input-error-color': $color-white,
         'input-error-background': $color-red,
+        'input-search-color': $color-white,
+        'input-pill-background': $color-grey-100,
 
         'button-primary-color': $color-white,
         'button-primary-background': $color-grey-300,
@@ -65,52 +71,71 @@ $themes: (
         'button-secondary-color': $color-white,
         'button-secondary-background': $color-grey-400,
         'button-secondary-background-hover': $color-grey-500,
+
+        'radio-background': $color-grey-300,
+
+        'checkbox-background': $color-grey-300,
+
+        'toggle-slider-background': $color-grey-300,
+
      ),
     lightTheme: (
         'layout-body-background': $color-white,
         'layout-body-color': $color-black,
 
-        'layout-scroll-background': $color-white,
-        'layout-scroll-thumb': $color-grey-500,
+        'layout-scroll-background': $color-transparent,
+        'layout-scroll-thumb': $color-grey-700,
 
         'nav-background': $color-grey-500,
-        'nav-item-fill': $color-black,
+        'nav-item-fill': $color-white,
 
         'header-background': $color-grey-500,
-        'header-color': $color-black,
-        'header-notification-inbox-fill': $color-black,
+        'header-color': $color-white,
+        'header-notification-inbox-fill': $color-white,
 
-        'modal-mask-color': $color-white,
-        'modal-background': $color-grey-500,
+        'modal-background': $color-grey-800,
+        'modal-close-fill': $color-black,
         'modal-color': $color-black,
+        'modal-content-background': $color-grey-1000,
+        'modal-mask-color': $color-grey-200,
 
-        'drawer-mask-color': $color-white,
-        'drawer-background': $color-grey-500,
-        'drawer-color': $color-black,
+        'drawer-background': $color-grey-800,
         'drawer-close-fill': $color-white,
-        'drawer-content-background': $color-grey-100,
+        'drawer-content-background': $color-grey-1000,
+        'drawer-color': $color-white,
+        'drawer-mask-color': $color-transparent,
+        'drawer-header-color': $color-black,
 
-        'notificaiton-background': $input-background,
+        'notificaiton-background': $color-grey-800,
+        'notificaiton-color': $color-black,
         'notificaiton-default': $color-grey-500,
         'notificaiton-info': $color-blue,
         'notificaiton-success': $color-green,
         'notificaiton-warning': $color-yellow,
         'notificaiton-error': $color-red,      
         
-        'input-label': $color-grey-600,
-        'input-background': $color-grey-300,
-        'input-color': $color-white,
-        'input-description': $color-grey-900,
+        'input-label': $color-grey-500,
+        'input-background': $color-grey-800,
+        'input-color': $color-black,
+        'input-description': $color-grey-500,
         'input-error-color': $color-white,
         'input-error-background': $color-red,
+        'input-search-color': $color-grey-300,
+        'input-pill-background': $color-grey-1000,
 
         'button-primary-color': $color-white,
         'button-primary-background': $color-grey-300,
         'button-primary-background-hover': $color-grey-400,
 
         'button-secondary-color': $color-white,
-        'button-secondary-background': $color-grey-400,
+        'button-secondary-background': $color-grey-500,
         'button-secondary-background-hover': $color-grey-500,
+
+        'radio-background': $color-grey-800,
+
+        'checkbox-background': $color-grey-800,
+
+        'toggle-slider-background': $color-grey-600,
     )
 );
 

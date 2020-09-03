@@ -74,8 +74,10 @@
 
 .modal-content {
     @include scrollbar($spacing-8);
+    @include theme() {
+        background: theme-get('modal-content-background');
+    } 
 
-    background: $color-grey-100;
     overflow-y: auto;
     padding: $spacing-20;
 }
@@ -85,8 +87,12 @@
 }
 
 .modal-close-button {
-    background: black;
     border: none;
-    color: #fff;
     cursor: pointer;
+
+    svg {
+        @include theme() {
+            fill: theme-get('modal-close-fill');
+        } 
+    } 
 }

@@ -10,6 +10,7 @@
 .m-notification {
     @include theme() {
         background: theme-get('notificaiton-background');
+        color: theme-get('notificaiton-color');
     } 
 
     border-radius: $border-radius;
