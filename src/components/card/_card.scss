@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - CARD
+// --------------------------------------------------------------------------------
+.m-card {
+    @include theme() {
+        background: theme-get('input-background');
+        color: theme-get('input-color');
+    } 
+
+    border-radius: $border-radius;
+    padding: $spacing-20;
+
+
+    .title {
+        @include font-size(1.1250); // 18px
+
+        font-weight: $font-weight-semibold;
+        margin-bottom: $spacing-16;
+        text-transform: uppercase;
+    }
+
+    .con {
+
+    }
+
+}

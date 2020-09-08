@@ -69,7 +69,9 @@ fieldset {
 }
 
 input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
-    background-color: $color-black;
+    @include theme() {
+        background: theme-get('input-disabled');
+    } 
 }
 
 ul {

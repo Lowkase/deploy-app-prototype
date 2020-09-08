@@ -8,7 +8,7 @@ import FormLabel from "../formLabel/formLabel"
 const FormToggle = (props) => {
     return (
         <div className="m-form-toggle">
-            <div class="control">           
+            <div className="control">           
                 <FormLabel text={ props.label } />
                 <label className="switch">
                     <input type="checkbox"/>

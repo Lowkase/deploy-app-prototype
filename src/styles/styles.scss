@@ -23,9 +23,9 @@
 // CONTROLS 
 @import '../components/button/button';
 @import '../components/buttonGroup/buttonGroup';
-
+@import '../components/card/card';
+@import '../components/cardGroup/cardGroup';
 @import '../components/drawer/drawer';
-
 @import '../components/formCheckbox/formCheckbox';
 @import '../components/formCheckboxGroup/formCheckboxGroup';
 @import '../components/formDescription/formDescription';
@@ -41,7 +41,6 @@
 @import '../components/formTextarea/formTextarea';
 @import '../components/formTextbox/formTextbox';
 @import '../components/formToggle/formToggle';
-
 @import '../components/icon/icon';
 @import '../components/link/link';
 @import '../components/modal/modal';
@@ -54,7 +53,7 @@
 @import '../template/header/header';
 @import '../template/section/section';
 
-// VIEWS
+// PAGES
 /*
-@import '../views/index';
+@import '../pages/index';
 */

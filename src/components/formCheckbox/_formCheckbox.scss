@@ -3,15 +3,15 @@
 // --------------------------------------------------------------------------------
 .m-form-checkbox {
     margin-bottom: $spacing-12;
-
     user-select: none;
 
     [type="checkbox"]:checked,
     [type="checkbox"]:not(:checked)
     {
-        position: absolute;
         left: $zi-hide;
+        position: absolute;
     }
+
     [type="checkbox"]:checked + label,
     [type="checkbox"]:not(:checked) + label
     {
@@ -25,20 +25,21 @@
         position: relative;
         line-height: $spacing-20;
     }
+
     [type="checkbox"]:checked + label:before,
     [type="checkbox"]:not(:checked) + label:before
     {
         @include position(absolute, $top: 0, $left: 0);
         @include theme() {
-            background: theme-get('checkbox-background');
+            background: theme-get('input-checkbox-background');
         } 
 
-        content: '';
         border-radius: $border-radius;
         content: '';
         height: $spacing-20;
         width: $spacing-20;
     }
+
     [type="checkbox"]:checked + label:after,
     [type="checkbox"]:not(:checked) + label:after
     {
@@ -50,11 +51,13 @@
         transition: all $transition-timer-200ms $transition-easeInOutQuad;
         width: $spacing-8;
     }
+
     [type="checkbox"]:not(:checked) + label:after
     {
         opacity: 0;
         transform: scale(0);
     }
+    
     [type="checkbox"]:checked + label:after
     {
         opacity: 1;

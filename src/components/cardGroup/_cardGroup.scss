@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - CARD GROUP
+// --------------------------------------------------------------------------------
+.m-card-group {
+	display: grid;
+	grid-gap: $spacing-20;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: $spacing-20;
+}
+
+.m-card-group-1 {
+    grid-template-columns: 1fr;
+}
+
+.m-card-group-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.m-card-group-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.m-card-group-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

@@ -2,12 +2,12 @@
 // LAYOUT - NAV
 //---------------------------------------------------------------------------------
 .t-layout nav {
+    @include font-size(1.1250); // 18px
     @include theme() {
         background: theme-get('nav-background');
     }     
-    @include font-size(1.1250); // 18px
 
-	grid-area: t-nav;
+    grid-area: t-nav;
     position: relative;
 
 	ul li {

@@ -18,15 +18,15 @@
 
         cursor: pointer;
         display: block;
+        line-height: $spacing-20;
         padding-left: $spacing-24;
         position: relative;
-        line-height: $spacing-20;
     }
     [type="radio"]:checked + label:before,
     [type="radio"]:not(:checked) + label:before {
         @include position(absolute, $top: 0, $left: 0);
         @include theme() {
-            background: theme-get('radio-background');
+            background: theme-get('input-radio-background');
         } 
         border-radius: 100%;
         content: '';

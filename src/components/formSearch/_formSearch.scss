@@ -14,9 +14,9 @@
         } 
 
         display: block;
-        height: 16px;
-        width: 16px;
-        margin: 10px 8px 0 8px;
+        height: $spacing-16;
+        width: $spacing-16;
+        margin: 10px $spacing-8 0 $spacing-8;
     }
 
     input[type=text], input[type=number], input[type=password] {

@@ -38,13 +38,13 @@
     .slider:before {
         @include position(absolute, $bottom: $spacing-2, $left: $spacing-2);
         @include theme() {
-            background: theme-get('toggle-slider-background');
+            background: theme-get('input-toggle-slider-background');
         } 
 
         content: "";
-        height: 16px;
+        height: $spacing-16;
         transition: $transition-timer-200ms;
-        width: 16px;
+        width: $spacing-16;
     }
 
     input:checked + .slider:before {

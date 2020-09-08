@@ -19,7 +19,7 @@
     }
 
     .notification-inbox {
-        @include position(absolute, $top: 8px, $right: $spacing-32);
+        @include position(absolute, $top: $spacing-8, $right: $spacing-32);
 
         cursor: pointer;
         padding: $spacing-8;
