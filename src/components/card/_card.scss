@@ -8,8 +8,9 @@
     } 
 
     border-radius: $border-radius;
+    min-height: 200px;
     padding: $spacing-20;
-
+    position: relative;
 
     .title {
         @include font-size(1.1250); // 18px
@@ -20,7 +21,8 @@
     }
 
     .con {
-
+       height: inherit;
+       position: relative;
+       width: inherit;
     }
-
 }

@@ -32,6 +32,8 @@ $themes: (
         'drawer-header-color': $color-white,
         'drawer-mask-color': $color-transparent,
 
+        'empty-fill': $color-grey-700,
+
         'header-background': $color-grey-200,
         'header-color': $color-white,
         'header-notification-inbox-fill': $color-white,
@@ -53,6 +55,8 @@ $themes: (
         'layout-body-color': $color-white,
         'layout-scroll-background': $color-transparent,
         'layout-scroll-thumb': $color-grey-400,
+
+        'loader-stroke': $color-white,
 
         'modal-background': $color-grey-200,
         'modal-close-fill': $color-white,
@@ -86,6 +90,8 @@ $themes: (
         'drawer-content-background': $color-grey-1000,
         'drawer-mask-color': $color-transparent,
 
+        'empty-fill': $color-grey-400,
+
         'header-background': $color-grey-400,
         'header-color': $color-white,
         'header-notification-inbox-fill': $color-white,
@@ -107,6 +113,8 @@ $themes: (
         'layout-body-color': $color-black,
         'layout-scroll-background': $color-transparent,
         'layout-scroll-thumb': $color-grey-700,
+
+        'loader-stroke': $color-grey-400,
 
         'modal-background': $color-grey-800,
         'modal-close-fill': $color-black,

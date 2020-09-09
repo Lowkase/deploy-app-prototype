@@ -32,14 +32,14 @@ const Nav = (props) => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
+                    <Link to="/map/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="large">
                             <SvgMap />
                         </Icon>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
+                    <Link to="/table/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="large">
                             <SvgOther />
                         </Icon>
@@ -48,14 +48,14 @@ const Nav = (props) => {
             </ul>
             <ul className="util">
                 <li>
-                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
+                    <Link to="/util/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="large">
                             <SvgSettings />
                         </Icon>
                     </Link>
                 </li>                 
                 <li>
-                    <Link to="/dashboard/" activeClassName="theme-primary-color-active-nav">
+                    <Link to="/user/" activeClassName="theme-primary-color-active-nav">
                         <Icon type="large">
                             <SvgUser />
                         </Icon>

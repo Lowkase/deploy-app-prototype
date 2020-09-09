@@ -9,6 +9,8 @@ import Header from "../template/header/header"
 import Button from "../components/button/button"
 import Card from "../components/card/card"
 import CardGroup from "../components/cardGroup/cardGroup"
+import Empty from "../components/empty/empty"
+import Loader from "../components/loader/loader"
 
 import Modal from "../components/modal/modal"
 import useModal from "../components/modal/useModal"
@@ -82,13 +84,13 @@ const IndexPage = (props) => {
                         </Button>
                     </Card>
                     <Card title = "Card Title">
-                        <h1>Tooks birds precedes contains laid start.</h1>
+                        <h1>This is an H1</h1>
                         <p>I will take the Ring to Mordor. Shrink interesting until devouring inside launching Isildur's? Sodding funeral fit water mustn't Smeagol.</p>
-                        <h2>Troubled forged ablaze bird world's source Arwen.</h2>
+                        <h2>This is an H2</h2>
                         <p>Don't you leave him, Samwise Gamgee. Horses slain unexpected been fair point worms who Elfs agents? Perish sauteed reforge Fenmarch much? Dwalin devil raising we'd draining defend!</p>
-                        <h3>Required Meriadoc warts spoke committees filth hearth?</h3>
+                        <h3>This is an H3</h3>
                         <p>Water Treebeard suspect northeast day's key pursuit! Suffer everyday retake Ring force kitchen cooking neck raw. Forked Smeagol's pillage sowing tale binding. Today is my 111th birthday!</p>
-                        <ul>
+                        <ul className="default">
                             <li>Gollum's!</li>
                             <li>Boromir's.</li>
                             <li>Elessar.</li>
@@ -101,7 +103,15 @@ const IndexPage = (props) => {
                     </Card>
                     <Card title = "Card Title">
                         Card with a title
-                    </Card>  
+                    </Card>
+                    <Card>
+                        <Loader />
+                    </Card>
+                    <Card>
+                        <Empty 
+                            text = "This is the empty message, promote an action, extra text to see it wrap."
+                        />
+                    </Card>
                 </CardGroup>
             </section>
         </Layout>

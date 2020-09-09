@@ -1,0 +1,20 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - LOADER
+// --------------------------------------------------------------------------------
+.m-loader {
+    min-height: 200px;
+    position: relative;
+    width: 100%;
+
+    svg {
+        @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+
+        @include theme() {
+            stroke: theme-get('loader-stroke');
+        } 
+
+        height: $spacing-44;
+        margin: auto;
+        width: $spacing-44;
+    }
+}

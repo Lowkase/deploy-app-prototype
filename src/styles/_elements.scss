@@ -59,8 +59,20 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-h2 {
+h1, h2, h3 {
     margin-bottom: $spacing-12;
+}
+
+h1 {
+    @include font-size(1.5000); // 24px
+}
+
+h2 {
+    @include font-size(1.1250); // 18px
+}
+
+h3 {
+    @include font-size(1.0000); // 16px
 }
 
 fieldset {
@@ -78,6 +90,11 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+ul.default li {
+    list-style-type: disc;
+    margin-left: $spacing-28;
 }
 
 pre {

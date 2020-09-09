@@ -1,0 +1,35 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - EMPTY
+// --------------------------------------------------------------------------------
+.m-empty {
+    min-height: 200px;
+    position: relative;
+    width: 100%;
+
+    .con {
+        @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+
+        div, svg {
+            margin: auto;
+        }
+
+        div {
+            @include theme() {
+                color: theme-get('empty-fill');
+            } 
+
+            margin-top: $spacing-8;
+            text-align: center;
+        }
+
+        svg {
+            @include theme() {
+                fill: theme-get('empty-fill');
+            } 
+    
+            display: block;
+            height: $spacing-60;
+            width: $spacing-60;
+        }
+    }
+}

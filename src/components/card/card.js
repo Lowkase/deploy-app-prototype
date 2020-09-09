@@ -5,9 +5,13 @@ import PropTypes from "prop-types";
 const Card = (props) => {
     return (
         <div className="m-card">
-            <div className="title">
-                { props.title}
-            </div>
+            { props.title ? (
+                <div className="title">
+                    { props.title}
+                </div>
+            ) : (
+                null
+            )}
             <div className="con">
                 { props.children }
             </div>

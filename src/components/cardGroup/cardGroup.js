@@ -15,7 +15,4 @@ CardGroup.propTypes = {
     scheme: PropTypes.string,
 };
 
-//CardGroup.defaultProps = {
-//};
-
 export default CardGroup
