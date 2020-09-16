@@ -2,9 +2,10 @@
 // LAYOUT - SECTION
 //---------------------------------------------------------------------------------
 .t-layout section {
-    @include scrollbar($spacing-8);
+    @include scrollbar($spacing-8, false);
     
 	grid-area: t-section;
     padding: $spacing-20;
+    position: relative;
     overflow-y: auto;
 }

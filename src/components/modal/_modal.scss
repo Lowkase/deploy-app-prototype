@@ -73,7 +73,7 @@
 }
 
 .modal-content {
-    @include scrollbar($spacing-8);
+    @include scrollbar($spacing-8, false);
     @include theme() {
         background: theme-get('modal-content-background');
     } 

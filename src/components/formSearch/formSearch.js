@@ -8,7 +8,7 @@ import SvgReset from "../../assets/svgs/reset";
 const FormSearch = (props) => {
     return (
         <div className="m-form-search">
-            <SvgSearch />
+            <SvgSearch className="search" />
             <input type="text" placeholder={props.placeholder} />
             <SvgReset className="reset theme-primary-color-fill-hover" />
         </div>

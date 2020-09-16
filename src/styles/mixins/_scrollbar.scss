@@ -1,7 +1,7 @@
 // --------------------------------------------------------------------------------
 // MIXINS - SCROLLBAR
 // --------------------------------------------------------------------------------
-@mixin scrollbar($size) {
+@mixin scrollbar($size, $blank) {
     // For Google Chrome
     &::-webkit-scrollbar {
         width:  $size;
@@ -9,8 +9,17 @@
     }
   
     &::-webkit-scrollbar-thumb {
-        @include theme() {
-            background: theme-get('layout-scroll-thumb');
+        @if $blank == true {
+            &::-webkit-scrollbar-track {
+                @include theme() {
+                    background: theme-get('table-border-color');
+                }
+            }
+        }
+        @else {
+            @include theme() {
+                background: theme-get('layout-scroll-thumb');
+            }
         }
 
         border-radius: $border-radius;

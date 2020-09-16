@@ -75,7 +75,7 @@
 }
 
 .drawer-content {
-    @include scrollbar($spacing-8);
+    @include scrollbar($spacing-8, false);
     @include theme() {
         background: theme-get('drawer-content-background');
     } 

@@ -25,4 +25,14 @@
        position: relative;
        width: inherit;
     }
+
+    &.m-card-full-viewport {
+        @include position(absolute, $top:0, $right:0, $bottom: 0, $left:0);
+
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: auto;
+        grid-template-rows: 37px 1fr; // Need to set a hard hight for the title div @37px
+        margin: $spacing-20;
+    }
 }

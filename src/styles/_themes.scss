@@ -49,6 +49,7 @@ $themes: (
         'input-pill-background': $color-grey-100,
         'input-radio-background': $color-grey-300,
         'input-search-color': $color-white,
+        'input-search-placeholder-color': $color-grey-700,
         'input-toggle-slider-background': $color-grey-300,
 
         'layout-body-background': $color-grey-150,
@@ -74,6 +75,8 @@ $themes: (
         'notificaiton-info': $color-blue,
         'notificaiton-success': $color-green,
         'notificaiton-warning': $color-yellow,
+
+'table-border-color': $color-grey-400,
      ),
     lightTheme: (
         'button-primary-color': $color-white,
@@ -107,6 +110,7 @@ $themes: (
         'input-pill-background': $color-grey-1000,
         'input-radio-background': $color-grey-800,
         'input-search-color': $color-grey-300,
+        'input-search-placeholder-color': $color-grey-500,
         'input-toggle-slider-background': $color-grey-600,
 
         'layout-body-background': $color-white,

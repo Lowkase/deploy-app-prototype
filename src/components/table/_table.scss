@@ -1,0 +1,84 @@
+// --------------------------------------------------------------------------------
+// COMPONENTS - TABLE
+// --------------------------------------------------------------------------------
+.m-table {
+
+    background: $color-grey-200;
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    .con {
+        @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
+        @include theme() {
+            border-color: theme-get('table-border-color');
+        }
+
+        border-width: 1px;
+        border-radius: $border-radius;
+        border-style: solid;            
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: auto;
+        grid-template-rows: 54px 45px 1fr 45px;
+    }
+ 
+    .toolbar {
+        @include theme() {
+            border-color: theme-get('table-border-color');
+        }
+
+        border-bottom-width: 1px;
+        border-bottom-style: solid;  
+        display: flex;
+
+        > div {
+            margin: $spacing-8 $spacing-8 0 ;
+            align-self: start;
+        }       
+    }
+
+    .header {
+        @include scrollbar(6px, true);
+
+        border-bottom: 1px solid $color-grey-300;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow-y: scroll;
+    
+        > div {
+            line-height: 45px;
+            padding: 0 $spacing-12;
+        }
+    }
+
+    .body {
+        overflow-y: scroll;
+        @include scrollbar(6px, false);
+    }
+
+    .row {
+        border-bottom: 1px solid $color-grey-300;
+        display: grid;
+        font-weight: $font-weight-light;
+        grid-template-columns: repeat(4, 1fr); 
+
+        > div {
+            line-height: 45px;
+            padding: 0 $spacing-12;            
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .footer {
+        @include theme() {
+            border-color: theme-get('table-border-color');
+        }
+
+        border-top-width: 1px;
+        border-top-style: solid;  
+    }
+}

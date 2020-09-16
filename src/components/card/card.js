@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 // Card
 const Card = (props) => {
     return (
-        <div className="m-card">
+        <div className={`m-card ${ props.scheme }`}>
             { props.title ? (
                 <div className="title">
                     { props.title}
@@ -21,6 +21,7 @@ const Card = (props) => {
 
 Card.propTypes = {
     title: PropTypes.string,
+    scheme: PropTypes.string,
 };
   
 export default Card

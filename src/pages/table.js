@@ -6,12 +6,8 @@ import "../styles/styles.scss"
 import Layout from "../template/layout/layout"
 import Header from "../template/header/header"
 
-import Button from "../components/button/button"
 import Card from "../components/card/card"
-import CardGroup from "../components/cardGroup/cardGroup"
-import Empty from "../components/empty/empty"
-import Loader from "../components/loader/loader"
-
+import Table from "../components/table/table"
 
 // TABLE
 const TablePage = (props) => {
@@ -22,7 +18,12 @@ const TablePage = (props) => {
             </Header>
 
             <section>
-                content
+                <Card
+                    scheme = "m-card-full-viewport"
+                    title = "TABLE"
+                >
+                    <Table />
+                </Card>
             </section>
         </Layout>
     );

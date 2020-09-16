@@ -84,6 +84,11 @@ const Layout = (props) => {
                         color: var(--primary-color);
                     }
 
+                    .m-form-search svg {
+                        fill: var(--primary-color) !important;
+                    }
+
+
                 `}</style>
             </Helmet>
             <div id="theme" className="darkTheme">
