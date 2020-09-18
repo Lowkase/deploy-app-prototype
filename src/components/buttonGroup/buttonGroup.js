@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const ButtonGroup = (props) => {
     return (
         <div className={`m-button-group ${ props.scheme }`} >
-                { props.children }
+            { props.children }
         </div>
     );
 }

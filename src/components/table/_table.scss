@@ -20,7 +20,7 @@
         display: grid;
         grid-gap: 0;
         grid-template-columns: auto;
-        grid-template-rows: 54px 45px 1fr 45px;
+        grid-template-rows: $spacing-52 $spacing-52 1fr $spacing-52;
     }
  
     .toolbar {
@@ -31,9 +31,10 @@
         border-bottom-width: 1px;
         border-bottom-style: solid;  
         display: flex;
+        padding-left: $spacing-8;
 
         > div {
-            margin: $spacing-8 $spacing-8 0 ;
+            margin: $spacing-8 $spacing-8 0 0;
             align-self: start;
         }       
     }
@@ -79,6 +80,6 @@
         }
 
         border-top-width: 1px;
-        border-top-style: solid;  
+        border-top-style: solid;              
     }
 }

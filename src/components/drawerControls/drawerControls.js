@@ -60,7 +60,9 @@ const Drawer = (props) => props.isDrawerShowing ? ReactDOM.createPortal(
                     <FormInput>
                         <FormSelect
                             label = "select"
+                            isDescription = {true}
                             description = "This is a select description"
+                            isError = {true}
                             error = "This is a select error"
                         >
                             <option value="gandalf">Gandalf</option>

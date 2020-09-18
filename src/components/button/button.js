@@ -30,11 +30,28 @@ const Button = (props) => {
             </div>
         );
     }
+
+    if(props.type === "icon"){
+        return (
+            <div 
+                className="m-button m-button-icon"
+                onClick={props.handleClick} 
+                onKeyPress={props.handleClick} 
+                role="button"
+                tabIndex={props.tabIndex}
+            >
+                {props.svg}
+                {props.text}
+            </div>
+        );
+    }
 }
 
 Button.propTypes = {
     handleClick: PropTypes.func,
+    icon: PropTypes.any,
     scheme: PropTypes.string,
+    svg: PropTypes.any,
     tabIndex: PropTypes.string,
     text: PropTypes.string,
     type: PropTypes.string,

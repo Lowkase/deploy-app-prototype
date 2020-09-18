@@ -1,6 +1,10 @@
 import React from 'react'
 
+import Button from "../../components/button/button"
 import FormSearch from "../../components/formSearch/formSearch"
+import Pagination from "../../components/pagination/pagination"
+
+import SvgFilter from "../../assets/svgs/filter";
 
 // TABLE
 const Table = (props) => {
@@ -13,6 +17,15 @@ const Table = (props) => {
                     />
                     <FormSearch
                         placeholder = "Filter by tenant"
+                    />
+
+                    <Button
+                        onClick={props.handleClick} 
+                        onKeyPress={props.handleClick} 
+                        svg={<SvgFilter/>}
+                        tabIndex={props.tabIndex}
+                        text="More Filters"
+                        type="icon"
                     />
                 </div>
 
@@ -163,7 +176,7 @@ const Table = (props) => {
                     </div>
                 </div>
                 <div className="footer">
-                    footer
+                    <Pagination />
                 </div>
             </div>
         </div>

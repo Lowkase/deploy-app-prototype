@@ -11,8 +11,8 @@ const Layout = (props) => {
             <Helmet>
                 <style type="text/css">{`
                     :root {
-                        --primary-color: #EC407A;
-                        --primary-color-hover: #C2185B;
+                        --primary-color: #1DBFF0;
+                        --primary-color-hover: #04A6D7;
                     }
                     
                     .theme-primary-color-background {
@@ -84,7 +84,7 @@ const Layout = (props) => {
                         color: var(--primary-color);
                     }
 
-                    .m-form-search svg {
+                    .m-form-search svg.search {
                         fill: var(--primary-color) !important;
                     }
 

@@ -13,16 +13,32 @@ const FormSelect = (props) => {
             <select>
                 {props.children}
             </select>
-            <FormError text={ props.error } />
-            <FormDescription text={ props.description } />
+            { props.isError ? (
+                <FormError text={ props.error } />
+            ) : (
+                null
+            )}
+            { props.isDescription ? (
+                <FormDescription text={ props.description } />
+            ) : (
+                null
+            )}
         </div>
     );
 }
 
 FormSelect.propTypes = {
     label: PropTypes.string,
+    isDescription: PropTypes.bool,
     description: PropTypes.string,
+    isError: PropTypes.bool,
     error: PropTypes.string,
 };
+
+FormSelect.defaultProps = {
+    isDescription: false,
+    isError: false,
+};
+
   
 export default FormSelect

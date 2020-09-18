@@ -10,7 +10,7 @@ const FormSearch = (props) => {
         <div className="m-form-search">
             <SvgSearch className="search" />
             <input type="text" placeholder={props.placeholder} />
-            <SvgReset className="reset theme-primary-color-fill-hover" />
+            <SvgReset className="reset" />
         </div>
     );
 }

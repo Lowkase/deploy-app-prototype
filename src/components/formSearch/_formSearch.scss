@@ -45,6 +45,10 @@
     }
 
     .reset {
+        @include theme() {
+            fill: theme-get('input-search-reset');
+        } 
+
         cursor: pointer;
         margin: 10px $spacing-8 0 0;
     }
