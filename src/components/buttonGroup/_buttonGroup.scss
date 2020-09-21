@@ -33,3 +33,12 @@
     justify-content: flex-end;
     padding-right: 0;
 }
+
+.m-button-group-table-actions {
+    justify-content: flex-end;
+    padding: 0;
+
+    > *:last-child {
+        margin-right: $spacing-12;
+    }    
+}

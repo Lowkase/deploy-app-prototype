@@ -3,6 +3,7 @@ import React from 'react'
 import Button from "../../components/button/button"
 import FormSearch from "../../components/formSearch/formSearch"
 import Pagination from "../../components/pagination/pagination"
+import TableRow from "../../components/tableRow/tableRow"
 
 import SvgFilter from "../../assets/svgs/filter";
 
@@ -20,8 +21,6 @@ const Table = (props) => {
                     />
 
                     <Button
-                        onClick={props.handleClick} 
-                        onKeyPress={props.handleClick} 
                         svg={<SvgFilter/>}
                         tabIndex={props.tabIndex}
                         text="More Filters"
@@ -30,150 +29,59 @@ const Table = (props) => {
                 </div>
 
                 <div className="header">
-                    <div>Column 1</div>
-                    <div>Column 2</div>
-                    <div>Column 3</div>
-                    <div>Column 4</div>
+                    <div>
+                        <div>Name</div>
+                        <div className="sort">
+                            <div className="sort-up"></div>
+                            <div className="sort-down"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Tenant</div>
+                        <div className="sort">
+                            <div className="sort-up"></div>
+                            <div className="sort-down"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Version</div>
+                        <div className="sort">
+                            <div className="sort-up"></div>
+                            <div className="sort-down"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Date</div>
+                        <div className="sort">
+                            <div className="sort-up"></div>
+                            <div className="sort-down"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>State</div>
+                        <div className="sort">
+                            <div className="sort-up"></div>
+                            <div className="sort-down"></div>
+                        </div>
+                    </div>
+                    <div></div>
                 </div>
                 <div className="body">
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
-                    <div className="row">
-                        <div>This is data</div>
-                        <div>This is more data</div>
-                        <div>2020-10-08 12:12:00</div>
-                        <div>email@address.com</div>
-                    </div>
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
+                    <TableRow />
                 </div>
                 <div className="footer">
                     <Pagination />

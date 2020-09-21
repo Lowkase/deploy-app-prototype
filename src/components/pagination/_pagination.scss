@@ -11,48 +11,22 @@
     flex-direction: row;
     justify-content: flex-end;
 
-    .results {
-        @include theme() {
-            border-color: theme-get('table-border-color');
-        }
-
-        border-left-width: 1px;
-        border-left-style: solid;
-        border-right-width: 1px;
-        border-right-style: solid;
-        line-height: $spacing-52;
-        padding: 0 $spacing-12;
-    }
-
-    .show {
-        @include theme() {
-            border-color: theme-get('table-border-color');
-        }
-        border-right-width: 1px;
-        border-right-style: solid;
+    > div {
         display: flex;
         line-height: $spacing-52;
-        padding: 0 $spacing-12;
-    }
-
-    .jump-to {
-        @include theme() {
-            border-color: theme-get('table-border-color');
-        }
-        border-right-width: 1px;
-        border-right-style: solid;
-        display: flex;
-        line-height: $spacing-52;
-        padding: 0 $spacing-12;
+        padding: 0 $spacing-16;
     }
 
     .pages {
-        display: flex;
-        line-height: $spacing-52;
-        padding: 0 $spacing-12;
+        justify-content: center;
+        min-width: 300px;
         
         > div {
             padding: 0 $spacing-8
+        }
+
+        .active {
+            font-weight: $font-weight-semibold;
         }
     }
 }

@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 
 import FormSelect from "../../components/formSelect/formSelect";
 
-
-// BUTTON
+// PAGINATION
 const Pagination = (props) => {
     return (
         <div className="m-pagination">
@@ -36,13 +35,13 @@ const Pagination = (props) => {
             </div>
             <div className="pages">
                 <div>&#x3c;</div>
-                <div>1</div>
+                <div className="active">1</div>
                 <div>2</div>
                 <div>3</div>
                 <div>...</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
                 <div>&#x3e;</div>
             </div>
         </div>

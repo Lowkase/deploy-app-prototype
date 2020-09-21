@@ -88,7 +88,9 @@ const Layout = (props) => {
                         fill: var(--primary-color) !important;
                     }
 
-
+                    .m-pagination .pages .active {
+                        color: var(--primary-color);
+                    }
                 `}</style>
             </Helmet>
             <div id="theme" className="darkTheme">

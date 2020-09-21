@@ -41,7 +41,7 @@ const Button = (props) => {
                 tabIndex={props.tabIndex}
             >
                 {props.svg}
-                {props.text}
+                <div>{props.text}</div>
             </div>
         );
     }

@@ -50,16 +50,11 @@
 }
 
 .m-button-icon {
+    @include clearfix();
     @include theme() {
         background: theme-get('button-primary-background');
         color: theme-get('button-primary-color');
     } 
-    
-    &:hover {
-        @include theme() {
-            background: theme-get('button-primary-background-hover');
-        } 
-    }
 
     display: flex;
 
@@ -68,9 +63,14 @@
             fill: theme-get('button-primary-color');
         } 
 
-        display: block;
         height: $spacing-16;
         margin-right: $spacing-4;
         width: $spacing-16;
+    }
+
+    &:hover {
+        @include theme() {
+            background: theme-get('button-primary-background-hover');
+        } 
     }
 }

@@ -44,12 +44,41 @@
 
         border-bottom: 1px solid $color-grey-300;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+grid-template-columns: 300px 1fr 1fr 1fr 1fr 180px; 
         overflow-y: scroll;
     
         > div {
             line-height: 45px;
+            display: flex;
             padding: 0 $spacing-12;
+        }
+        > div:last-child {
+            padding: 0;
+        }
+
+        .sort {
+            margin-left: $spacing-8;
+            margin-top: $spacing-12;
+
+            .sort-up {
+                border-right: $spacing-4 solid transparent;
+                @include theme() {
+                    border-bottom-color: theme-get('table-sort-color');
+                }
+                border-bottom-width: $spacing-4 * 1.732;
+                border-bottom-style: solid;
+                border-left: $spacing-4 solid transparent;
+                margin-bottom: $spacing-4;
+            }
+            .sort-down {
+                @include theme() {
+                    border-top-color: theme-get('table-sort-color');
+                }
+                border-top-width: $spacing-4 * 1.732;
+                border-top-style: solid;
+                border-right: $spacing-4 solid transparent; 
+                border-left: $spacing-4 solid transparent; 
+            }
         }
     }
 
@@ -62,15 +91,23 @@
         border-bottom: 1px solid $color-grey-300;
         display: grid;
         font-weight: $font-weight-light;
-        grid-template-columns: repeat(4, 1fr); 
+grid-template-columns: 300px 1fr 1fr 1fr 1fr 180px; 
 
         > div {
+            @include text-truncate();
+
             line-height: 45px;
             padding: 0 $spacing-12;            
         }
 
         &:last-child {
             border-bottom: 0;
+        }
+
+        .actions {
+            display: flex;
+            line-height: 1.2; // Override the row line height for this action buttons
+            padding: $spacing-4 0;
         }
     }
 
