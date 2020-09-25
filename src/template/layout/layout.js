@@ -91,6 +91,18 @@ const Layout = (props) => {
                     .m-pagination .pages .active {
                         color: var(--primary-color);
                     }
+
+                    .m-pagination .pages > div:not(.between):hover {
+                        color: var(--primary-color);
+                    }
+
+                    .m-table .toolbar svg {
+                        fill: var(--primary-color);
+                    }
+
+                    .m-table .row .actions svg {
+                        fill: var(--primary-color);
+                    }
                 `}</style>
             </Helmet>
             <div id="theme" className="darkTheme">

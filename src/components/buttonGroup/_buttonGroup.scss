@@ -37,8 +37,4 @@
 .m-button-group-table-actions {
     justify-content: flex-end;
     padding: 0;
-
-    > *:last-child {
-        margin-right: $spacing-12;
-    }    
 }

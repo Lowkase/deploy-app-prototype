@@ -2,4 +2,47 @@
 // COMPONENTS - TABLE ROW
 // --------------------------------------------------------------------------------
 .m-table-row {
+    border-bottom: 1px solid $color-grey-300;
+    font-weight: $font-weight-light;
+
+    &.expand-row {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+
+        .edit {
+            display: flex;
+        }
+    }    
+
+    .main {
+        display: grid;
+        grid-template-columns: 300px repeat(auto-fit, minmax(100px, 1fr)); 
+    
+        > div {
+            @include text-truncate();
+    
+            line-height: 45px;
+            padding: 0 $spacing-12;            
+        }
+    
+        &:last-child {
+            border-bottom: 0;
+        }
+    
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+            line-height: 1.2; // Override the row line height for this action buttons
+            padding: $spacing-4 0;
+        }
+    }
+
+    .edit {
+        @include theme() {
+            background: theme-get('table-edit-background');
+        }
+
+        display: none;
+        grid-gap: $spacing-20;
+        padding: $spacing-20;
+    }
 }

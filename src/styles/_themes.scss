@@ -80,6 +80,7 @@ $themes: (
 'table-border-color': $color-grey-400,
 'table-footer-color': $color-grey-800,
 'table-sort-color': $color-white,
+'table-edit-background': $color-grey-100,
 
      ),
     lightTheme: (
@@ -145,6 +146,7 @@ $themes: (
 'table-border-color': $color-grey-400,
 'table-footer-color': $color-grey-800,
 'table-sort-color': $color-black,
+'table-edit-background': $color-white,
     )
 );
 

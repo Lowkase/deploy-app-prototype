@@ -34,14 +34,15 @@ const Button = (props) => {
     if(props.type === "icon"){
         return (
             <div 
-                className="m-button m-button-icon"
+                className={`m-button m-button-icon ${ props.scheme }`}
+                id={props.id} 
                 onClick={props.handleClick} 
                 onKeyPress={props.handleClick} 
                 role="button"
                 tabIndex={props.tabIndex}
             >
                 {props.svg}
-                <div>{props.text}</div>
+                <div className="text">{props.text}</div>
             </div>
         );
     }
@@ -50,6 +51,7 @@ const Button = (props) => {
 Button.propTypes = {
     handleClick: PropTypes.func,
     icon: PropTypes.any,
+    id: PropTypes.string,
     scheme: PropTypes.string,
     svg: PropTypes.any,
     tabIndex: PropTypes.string,
@@ -59,6 +61,7 @@ Button.propTypes = {
 };
   
 Button.defaultProps = {
+    scheme: '',
     tabIndex: '0',
     text: 'TEXT BUTTON',
     type: 'button',

@@ -21,6 +21,14 @@
         grid-gap: 0;
         grid-template-columns: auto;
         grid-template-rows: $spacing-52 $spacing-52 1fr $spacing-52;
+
+        &.expand-toolbar {
+            grid-template-rows: auto $spacing-52 1fr $spacing-52;
+
+            .toolbar .more {
+                display: grid;
+            }
+        }
     }
  
     .toolbar {
@@ -30,21 +38,36 @@
 
         border-bottom-width: 1px;
         border-bottom-style: solid;  
-        display: flex;
-        padding-left: $spacing-8;
 
-        > div {
-            margin: $spacing-8 $spacing-8 0 0;
-            align-self: start;
-        }       
+        .main {
+            display: flex;
+            padding-left: $spacing-8;
+    
+            > div {
+                margin: $spacing-8 $spacing-8 0 0;
+                align-self: start;
+            }       
+        }
+
+        .more {
+            display: none;
+            grid-gap: $spacing-8;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-rows: auto;
+            padding: $spacing-8;
+        }
     }
 
     .header {
+        @include theme() {
+            border-color: theme-get('table-border-color');
+        }
         @include scrollbar(6px, true);
 
-        border-bottom: 1px solid $color-grey-300;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;  
         display: grid;
-grid-template-columns: 300px 1fr 1fr 1fr 1fr 180px; 
+        grid-template-columns: 300px repeat(auto-fit, minmax(100px, 1fr)); 
         overflow-y: scroll;
     
         > div {
@@ -57,6 +80,7 @@ grid-template-columns: 300px 1fr 1fr 1fr 1fr 180px;
         }
 
         .sort {
+            cursor: pointer;
             margin-left: $spacing-8;
             margin-top: $spacing-12;
 
@@ -85,30 +109,6 @@ grid-template-columns: 300px 1fr 1fr 1fr 1fr 180px;
     .body {
         overflow-y: scroll;
         @include scrollbar(6px, false);
-    }
-
-    .row {
-        border-bottom: 1px solid $color-grey-300;
-        display: grid;
-        font-weight: $font-weight-light;
-grid-template-columns: 300px 1fr 1fr 1fr 1fr 180px; 
-
-        > div {
-            @include text-truncate();
-
-            line-height: 45px;
-            padding: 0 $spacing-12;            
-        }
-
-        &:last-child {
-            border-bottom: 0;
-        }
-
-        .actions {
-            display: flex;
-            line-height: 1.2; // Override the row line height for this action buttons
-            padding: $spacing-4 0;
-        }
     }
 
     .footer {

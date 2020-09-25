@@ -38,7 +38,7 @@ const Pagination = (props) => {
                 <div className="active">1</div>
                 <div>2</div>
                 <div>3</div>
-                <div>...</div>
+                <div className="between">...</div>
                 <div>10</div>
                 <div>11</div>
                 <div>12</div>
